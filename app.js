@@ -2,10 +2,10 @@
 
 const episoade = [
     {
-        titlu: "Interviu cu D-na Directoare",
-        youtubeId: "dQw4w9WgXcQ", 
-        data: "15 Oct 2023",
-        descriere: "Discutăm despre planurile școlii și noile dotări."
+        titlu: "Dialoguri Inspiraționale: DOINA RUȘTI - ADN-ul poveștilor Doinei Ruști",
+        youtubeId: "HZD5_aJ9DVQ", 
+        data: "20 Dec 2025",
+        descriere: "O incursiune în universul ficțional al Doinei Ruști."
     },
     {
         titlu: "Cum să înveți engleza ușor",
