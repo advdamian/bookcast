@@ -75,7 +75,9 @@ if (ziarContainer) {
             </div>
         `;
     });
-    // --- LOGICA MENIU MOBIL ---
+}
+
+// --- LOGICA MENIU MOBIL ---
 const btn = document.getElementById('mobile-menu-btn');
 const menu = document.getElementById('mobile-menu');
 
