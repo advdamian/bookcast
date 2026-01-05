@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bookcast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">📚 Bookcast</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-600">Acasă</a>
+                <a href="ziar.html" class="hover:text-blue-600">Ziarul Buzz</a>
+                <a href="contact.html" class="text-blue-600 font-bold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="flex-grow flex items-center justify-center py-12 px-4">
+        <div class="bg-white p-8 rounded-2xl shadow-lg max-w-lg w-full">
+            <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Scrie-ne!</h1>
+            <p class="text-gray-600 mb-8 text-center">Ai o idee pentru un podcast sau vrei să te alături echipei?</p>
+            
+            <form action="mailto:emailul-scolii@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold mb-1">Numele tău</label>
+                    <input type="text" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-1">Mesaj</label>
+                    <textarea rows="4" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
+                    Trimite Mesaj
+                </button>
+            </form>
+            
+            <div class="mt-8 text-center border-t pt-6">
+                <p class="font-bold text-gray-700">Unde ne găsești:</p>
+                <p class="text-blue-600">Scoala Gimnazială Nr. X</p>
+                <p class="text-gray-500">emailul-scolii@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p>© 2024 Bookcast.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
