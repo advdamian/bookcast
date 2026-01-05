@@ -75,4 +75,13 @@ if (ziarContainer) {
             </div>
         `;
     });
+    // --- LOGICA MENIU MOBIL ---
+const btn = document.getElementById('mobile-menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+if (btn && menu) {
+    btn.addEventListener('click', () => {
+        // Toggle clasa 'hidden' (dacă e ascuns îl arată, dacă e vizibil îl ascunde)
+        menu.classList.toggle('hidden');
+    });
 }
