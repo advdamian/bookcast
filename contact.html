@@ -29,30 +29,32 @@
 </head>
 <body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white shadow sticky top-0 z-50">
+    <nav class="bg-white/80 backdrop-blur-md border-b border-white/50 sticky top-0 z-50 transition-colors duration-200">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                
+            <div class="flex justify-between items-center py-3">
                 <a href="index.html" class="flex items-center space-x-2">
                     <img src="logo.png" alt="Logo Bookcast" class="h-14 w-auto transform hover:scale-105 transition-transform duration-200"> 
                 </a>
-
-                <div class="hidden md:flex space-x-6 items-center">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Acasă</a>
-                    <a href="ziar.html" class="text-gray-600 hover:text-amber-600 font-medium transition">Ziarul Buzz</a>
-                    <a href="podcast.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Podcast</a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
+                    <a href="ziar.html" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
+                    <a href="podcast.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
                     <a href="contact.html" class="text-indigo-600 font-bold bg-white/60 px-3 py-1 rounded-lg border border-indigo-100">Contact</a>
                 </div>
-
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
-                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
                     </button>
                 </div>
             </div>
         </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t p-4 space-y-2">
+            <a href="index.html" class="block py-2 text-indigo-600">Acasă</a>
+            <a href="ziar.html" class="block py-2 hover:text-indigo-600">Ziarul Buzz</a>
+            <a href="podcast.html" class="block py-2 hover:text-indigo-600">Podcast</a>
+            <a href="contact.html" class="block py-2 hover:text-indigo-600 font-bold">Contact</a>
+        </div>
+    </nav>
 
         <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t">
             <a href="index.html" class="block py-3 px-4 text-sm hover:bg-gray-200">Acasă</a>
