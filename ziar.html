@@ -11,19 +11,13 @@
     <link rel="icon" type="image/png" href="iconita.png">
     <style>
         body { font-family: 'Jost', sans-serif; }
-        @keyframes liquid {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .liquid-gold-bg {
-            background: linear-gradient(-45deg, #fef3c7, #fff7ed, #ffedd5, #fef9c3);
-            background-size: 400% 400%;
-            animation: liquid 15s ease infinite;
-        }
+        .liquid-bg-static {
+    background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
+    background-attachment: fixed;
+}
     </style>
 </head>
-<body class="liquid-gold-bg text-slate-800 flex flex-col min-h-screen">
+<body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen">
 
     <nav class="bg-white/70 backdrop-blur-md border-b border-white/40 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">

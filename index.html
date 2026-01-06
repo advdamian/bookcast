@@ -12,32 +12,27 @@
     <style>
         body { font-family: 'Jost', sans-serif; }
         
-        /* ANIMAȚIA LIQUID BACKGROUND */
-        @keyframes liquid {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .liquid-bg {
-            background: linear-gradient(-45deg, #e0e7ff, #f3e8ff, #fce7f3, #e0f2fe);
-            background-size: 400% 400%;
-            animation: liquid 15s ease infinite;
+        /* OPTIMIZARE: Am scos animația infinită care făcea lag. 
+           Acum e un gradient fix, dar foarte fin. */
+        .liquid-bg-static {
+            background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
+            background-attachment: fixed; /* Asta ajută la performanță la scroll */
         }
     </style>
 </head>
-<body class="liquid-bg text-slate-800 flex flex-col min-h-screen">
+<body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white/70 backdrop-blur-md border-b border-white/40 sticky top-0 z-50">
+    <nav class="bg-white/80 backdrop-blur-md border-b border-white/50 sticky top-0 z-50 transition-colors duration-200">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-3">
                 <a href="index.html" class="flex items-center space-x-2">
-                    <img src="logo.png" alt="Logo Bookcast" class="h-14 w-auto hover:rotate-3 transition"> 
+                    <img src="logo.png" alt="Logo Bookcast" class="h-14 w-auto transform hover:scale-105 transition-transform duration-200"> 
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-indigo-600 font-bold bg-white/50 px-3 py-1 rounded-lg">Acasă</a>
-                    <a href="ziar.html" class="text-slate-600 hover:text-indigo-600 font-medium transition">Ziarul Buzz</a>
-                    <a href="podcast.html" class="text-slate-600 hover:text-indigo-600 font-medium transition">Podcast</a>
-                    <a href="contact.html" class="text-slate-600 hover:text-indigo-600 font-medium transition">Contact</a>
+                    <a href="index.html" class="text-indigo-600 font-bold bg-white/60 px-3 py-1 rounded-lg border border-indigo-100">Acasă</a>
+                    <a href="ziar.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
+                    <a href="podcast.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
@@ -46,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-xl border-t p-4 space-y-2">
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t p-4 space-y-2">
             <a href="index.html" class="block py-2 text-indigo-600 font-bold">Acasă</a>
             <a href="ziar.html" class="block py-2 hover:text-indigo-600">Ziarul Buzz</a>
             <a href="podcast.html" class="block py-2 hover:text-indigo-600">Podcast</a>
@@ -55,19 +50,20 @@
     </nav>
 
     <header class="relative py-24 text-center px-4 overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-400/30 rounded-full blur-3xl -z-10"></div>
-        <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-blue-400/30 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-purple-200/40 to-blue-200/40 rounded-full blur-3xl -z-10"></div>
 
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-slate-900 drop-shadow-sm">Bun venit la Bookcast</h1>
-        <p class="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto font-light">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-slate-900 drop-shadow-sm tracking-tight">
+            Bun venit la <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Bookcast</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
             Vocile noastre. Poveștile voastre. Un proiect multimedia realizat de elevi.
         </p>
         
         <div class="flex flex-col sm:flex-row justify-center gap-5">
-            <a href="ziar.html" class="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-8 py-4 rounded-full font-bold hover:shadow-lg hover:shadow-orange-500/30 transition transform hover:-translate-y-1">
+            <a href="ziar.html" class="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-1 transform transition-transform duration-200 ease-out">
                 📖 Citește Ziarul
             </a>
-            <a href="podcast.html" class="bg-white/80 backdrop-blur-sm border border-white text-indigo-600 px-8 py-4 rounded-full font-bold hover:bg-white transition shadow-lg transform hover:-translate-y-1">
+            <a href="podcast.html" class="bg-white/80 backdrop-blur-sm border border-white text-indigo-600 px-8 py-4 rounded-full font-bold hover:bg-white hover:-translate-y-1 transform transition-transform duration-200 ease-out shadow-lg">
                 🎙️ Ascultă Podcast
             </a>
         </div>
@@ -75,10 +71,10 @@
 
     <section class="py-16 max-w-6xl mx-auto px-4 flex-grow">
         <div class="flex items-center justify-between mb-8">
-            <h2 class="text-3xl font-bold text-slate-800 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+            <h2 class="text-3xl font-bold text-slate-800">
                 🔥 Ultimele Episoade
             </h2>
-            <a href="podcast.html" class="text-indigo-600 hover:text-pink-600 font-medium hidden md:block transition">Toată colecția &rarr;</a>
+            <a href="podcast.html" class="text-indigo-600 hover:text-pink-600 font-medium hidden md:block transition-colors duration-200">Toată colecția &rarr;</a>
         </div>
         
         <div id="podcast-container" data-limit="3" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
@@ -87,22 +83,22 @@
              <a href="podcast.html" class="text-indigo-600 font-bold">Vezi toate episoadele &rarr;</a>
         </div>
 
-        <div class="text-center mt-20 bg-white/60 backdrop-blur-xl border border-white/50 p-10 rounded-3xl shadow-xl">
+        <div class="text-center mt-20 bg-white/70 backdrop-blur-lg border border-white/60 p-10 rounded-3xl shadow-xl">
             <h3 class="text-2xl font-bold text-slate-800 mb-3">Nu rata niciun episod!</h3>
             <p class="text-slate-600 mb-8">Abonează-te la canalul nostru oficial.</p>
-            <a href="https://www.youtube.com/@bookcast1" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-pink-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg hover:shadow-red-500/30 transition transform hover:scale-105">
+            <a href="https://www.youtube.com/@bookcast1" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-pink-600 text-white px-8 py-3 rounded-full font-bold shadow-md hover:shadow-lg hover:scale-105 transform transition-transform duration-200 ease-out">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 Subscribe pe YouTube
             </a>
         </div>
     </section>
 
-    <footer class="bg-slate-900/90 backdrop-blur-md text-gray-300 py-10 text-center mt-auto border-t border-gray-800">
+    <footer class="bg-slate-900 text-gray-300 py-10 text-center mt-auto border-t border-gray-800">
         <div class="flex justify-center space-x-6 mb-4">
-             <a href="https://www.facebook.com/profile.php?id=100082884984904" target="_blank" class="text-gray-400 hover:text-blue-500 transition transform hover:scale-110">
+             <a href="https://www.facebook.com/profile.php?id=100082884984904" target="_blank" class="text-gray-400 hover:text-blue-500 transition-transform duration-200 transform hover:scale-110">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.641c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z"/></svg>
             </a>
-            <a href="https://www.youtube.com/@bookcast1" target="_blank" class="text-gray-400 hover:text-red-600 transition transform hover:scale-110">
+            <a href="https://www.youtube.com/@bookcast1" target="_blank" class="text-gray-400 hover:text-red-600 transition-transform duration-200 transform hover:scale-110">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
         </div>
