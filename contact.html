@@ -4,95 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookcast - Contact</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="iconita.png">
-<style>
-    /* Aplicăm fontul peste tot */
-    body { font-family: 'Jost', sans-serif; }
     
-    /* Opțional: Futura arată bine când literele sunt puțin mai depărtate la titluri */
-    h1, h2, h3, .font-bold {
-        letter-spacing: -0.02em; /* Puțin mai strâns, stil modern */
-    }
-</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="iconita.png">
+
+    <style>
+        /* Aplicăm fontul peste tot */
+        body { font-family: 'Jost', sans-serif; }
+        
+        /* Ajustare fină pentru titluri */
+        h1, h2, h3, .font-bold {
+            letter-spacing: -0.02em; 
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-gray-100 flex flex-col min-h-screen">
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-    <nav class="bg-gray-800 shadow sticky top-0 z-50 border-b border-gray-700">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-            
-            <a href="index.html" class="flex items-center space-x-2">
-                <img src="logo.png" alt="Logo Bookcast" class="h-16 w-auto"> 
-            </a>
+    <nav class="bg-white shadow sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo Bookcast" class="h-16 w-auto"> 
+                </a>
 
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Acasă</a>
-                <a href="ziar.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Ziarul Buzz</a>
-                <a href="podcast.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Podcast</a>
-                <a href="contact.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Contact</a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Acasă</a>
+                    <a href="ziar.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Ziarul Buzz</a>
+                    <a href="podcast.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Podcast</a>
+                    <a href="contact.html" class="text-blue-600 font-medium transition">Contact</a> </div>
 
-            </div>
-
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
-                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t">
-        <a href="index.html" class="block py-3 px-4 text-sm hover:bg-gray-200">Acasă</a>
-        <a href="ziar.html" class="block py-3 px-4 text-sm hover:bg-gray-200">Ziarul Buzz</a>
-        <a href="podcast.html" class="block py-3 px-4 text-sm hover:bg-gray-200">Podcast</a>
-        <a href="contact.html" class="block py-3 px-4 text-sm hover:bg-gray-200">Contact</a>
-        
-    </div>
-</nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t">
+            <a href="index.html" class="block py-3 px-4 text-sm hover:bg-gray-200">Acasă</a>
+            <a href="ziar.html" class="block py-3 px-4 text-sm hover:bg-gray-200">Ziarul Buzz</a>
+            <a href="podcast.html" class="block py-3 px-4 text-sm hover:bg-gray-200">Podcast</a>
+            <a href="contact.html" class="block py-3 px-4 text-sm text-blue-600 font-bold bg-gray-100">Contact</a>
+        </div>
+    </nav>
 
     <section class="flex-grow flex items-center justify-center py-12 px-4">
-        <div class="bg-gray-800 p-8 rounded-2xl shadow-lg max-w-lg w-full border border-gray-700">
-            <h1 class="text-3xl font-bold mb-6 text-center text-gray-100">Scrie-ne!</h1>
-            <p class="text-gray-400 mb-8 text-center">Ai o idee pentru un podcast sau vrei să te alături echipei?</p>
-
+        <div class="bg-white p-8 rounded-2xl shadow-lg max-w-lg w-full">
+            <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Scrie-ne!</h1>
+            <p class="text-gray-600 mb-8 text-center">Ai o idee pentru un podcast sau vrei să te alături echipei?</p>
+            
             <form action="https://formspree.io/f/xrebwvdj" method="POST" class="space-y-4">
-    
-    <div>
-        <label class="block text-sm font-bold mb-1">Numele tău</label>
-        <input type="text" name="nume" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500">
-    </div>
+                
+                <div>
+                    <label class="block text-sm font-bold mb-1">Numele tău</label>
+                    <input type="text" name="nume" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500 hover:border-blue-400 transition">
+                </div>
 
-    <div>
-        <label class="block text-sm font-bold mb-1">Emailul tău</label>
-        <input type="email" name="email" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500">
-    </div>
+                <div>
+                    <label class="block text-sm font-bold mb-1">Emailul tău</label>
+                    <input type="email" name="email" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500 hover:border-blue-400 transition">
+                </div>
 
-    <div>
-        <label class="block text-sm font-bold mb-1">Mesaj</label>
-        <textarea name="mesaj" rows="4" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
-    </div>
+                <div>
+                    <label class="block text-sm font-bold mb-1">Mesaj</label>
+                    <textarea name="mesaj" rows="4" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500 hover:border-blue-400 transition"></textarea>
+                </div>
 
-    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
-        Trimite Mesaj
-    </button>
-</form>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition shadow-md">
+                    Trimite Mesaj
+                </button>
+            </form>
             
             <div class="mt-8 text-center border-t pt-6">
                 <p class="font-bold text-gray-700">Unde ne găsești:</p>
-                <p class="text-blue-600">Scoala Gimnazială sat Mologești</p>
+                <p class="text-blue-600 font-medium">Școala Gimnazială sat Mologești</p>
                 <p class="text-gray-500">1bookcast1@gmail.com</p>
             </div>
         </div>
     </section>
 
     <footer class="bg-gray-900 text-white py-8 text-center">
-        <p>© 2026 Bookcast.</p>
+        <p class="opacity-80">© 2026 Bookcast. Toate drepturile rezervate.</p>
     </footer>
 
     <script src="app.js"></script>
