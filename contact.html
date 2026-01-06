@@ -59,19 +59,27 @@
             <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Scrie-ne!</h1>
             <p class="text-gray-600 mb-8 text-center">Ai o idee pentru un podcast sau vrei să te alături echipei?</p>
             
-            <form action="mailto:1bookcast1@gmail.com" method="post" enctype="text/plain" class="space-y-4">
-                <div>
-                    <label class="block text-sm font-bold mb-1">Numele tău</label>
-                    <input type="text" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500">
-                </div>
-                <div>
-                    <label class="block text-sm font-bold mb-1">Mesaj</label>
-                    <textarea rows="4" class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
-                    Trimite Mesaj
-                </button>
-            </form>
+            <form action="https://formspree.io/f/xrebwvdj" method="POST" class="space-y-4">
+    
+    <div>
+        <label class="block text-sm font-bold mb-1">Numele tău</label>
+        <input type="text" name="nume" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div>
+        <label class="block text-sm font-bold mb-1">Emailul tău</label>
+        <input type="email" name="email" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div>
+        <label class="block text-sm font-bold mb-1">Mesaj</label>
+        <textarea name="mesaj" rows="4" required class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
+        Trimite Mesaj
+    </button>
+</form>
             
             <div class="mt-8 text-center border-t pt-6">
                 <p class="font-bold text-gray-700">Unde ne găsești:</p>
