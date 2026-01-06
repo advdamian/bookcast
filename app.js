@@ -8,16 +8,16 @@ const episoade = [
         descriere: "O incursiune în universul ficțional al Doinei Ruști și secretele scrierii creative."
     },
     {
-        titlu: "Cum să înveți engleza ușor",
-        youtubeId: "5qap5aO4i9A", 
-        data: "01 Nov 2023",
-        descriere: "Sfaturi practice pentru Cambridge și trucuri de învățare rapidă."
+        titlu: "Dialoguri Inspiraționale: MARIUS MANOLE - Despre Teatru, Cultură și Provocări",
+        youtubeId: "oDYf1jrP54A&t", 
+        data: "28 Nov 2025",
+        descriere: "De data asta, am reușit să facem un Bookcast SUPER special: l-am invitat pe actorul Marius Manole să stea de vorbă cu noi!"
     },
     {
-        titlu: "Despre viitorul educației",
-        youtubeId: "dQw4w9WgXcQ", 
-        data: "15 Oct 2023",
-        descriere: "O discuție liberă despre școala viitorului și tehnologie."
+        titlu: "Dialoguri Inspiraționale: FLORIN STOICAN - Despre Geologie și Natură",
+        youtubeId: "G-mzi7cKPt4", 
+        data: "19 Oct 2025",
+        descriere: "Florin ne-a arătat că știința nu e deloc plictisitoare și că a proteja natura e una dintre cele mai tari aventuri pe care le poți avea."
     },
      // Mai adaugă aici...
 ];
