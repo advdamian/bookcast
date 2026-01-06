@@ -43,7 +43,7 @@ const ziare = [
     }
 ];
 
-// --- LOGICA DE AFIȘARE (DESIGN LIQUID GLASS) ---
+// --- LOGICA DE AFIȘARE (OPTIMIZATĂ) ---
 
 // 1. Populare Podcasturi
 const podcastContainer = document.getElementById('podcast-container');
@@ -53,9 +53,9 @@ if (podcastContainer) {
     podcastContainer.innerHTML = '';
 
     episoade.slice(0, limita).forEach(episod => {
-        // AICI ESTE DESIGNUL DE STICLĂ PENTRU VIDEO
+        // OPTIMIZARE: Am schimbat 'transition-all duration-300' cu 'transition-transform duration-200'
         podcastContainer.innerHTML += `
-            <div class="bg-white/60 backdrop-blur-xl border border-white/50 rounded-2xl shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1">
+            <div class="bg-white/60 backdrop-blur-xl border border-white/50 rounded-2xl shadow-lg hover:shadow-xl transition-transform duration-200 ease-out overflow-hidden flex flex-col group hover:-translate-y-1">
                 <div class="aspect-w-16 aspect-h-9 relative">
                     <iframe class="w-full h-56 rounded-t-2xl" src="https://www.youtube.com/embed/${episod.youtubeId}" title="${episod.titlu}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -63,7 +63,7 @@ if (podcastContainer) {
                     <div class="flex items-center gap-2 mb-2">
                         <span class="px-2 py-1 bg-indigo-100/50 text-indigo-700 text-xs font-bold rounded-md border border-indigo-200">${episod.data}</span>
                     </div>
-                    <h3 class="font-bold text-lg text-slate-800 leading-tight mb-2 group-hover:text-indigo-600 transition">${episod.titlu}</h3>
+                    <h3 class="font-bold text-lg text-slate-800 leading-tight mb-2 group-hover:text-indigo-600 transition-colors duration-200">${episod.titlu}</h3>
                     <p class="text-sm text-slate-600 line-clamp-2">${episod.descriere}</p>
                 </div>
             </div>
@@ -79,19 +79,19 @@ if (ziarContainer) {
     if(loadingMsg) loadingMsg.style.display = 'none';
 
     ziare.forEach(ziar => {
-        // AICI ESTE DESIGNUL DE STICLĂ PENTRU ZIAR (Stil Amber/Gold)
+        // OPTIMIZARE: La fel, tranziții mai rapide și specifice
         ziarContainer.innerHTML += `
-            <div class="bg-white/60 backdrop-blur-xl border border-white/50 rounded-2xl shadow-lg hover:shadow-amber-500/20 transition-all duration-300 overflow-hidden flex flex-col group hover:-translate-y-1 h-full">
+            <div class="bg-white/60 backdrop-blur-xl border border-white/50 rounded-2xl shadow-lg hover:shadow-xl transition-transform duration-200 ease-out overflow-hidden flex flex-col group hover:-translate-y-1 h-full">
                 <div class="bg-gradient-to-br from-amber-100/50 to-orange-100/50 h-64 flex justify-center items-center p-4 relative overflow-hidden">
                     <div class="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
-                    <img src="${ziar.coperta}" alt="${ziar.numar}" class="relative h-full w-auto object-contain shadow-xl transform group-hover:scale-105 group-hover:rotate-2 transition duration-500 rounded-md">
+                    <img src="${ziar.coperta}" alt="${ziar.numar}" class="relative h-full w-auto object-contain shadow-xl transform group-hover:scale-105 group-hover:rotate-2 transition-transform duration-300 rounded-md">
                 </div>
                 
                 <div class="p-6 flex flex-col flex-grow relative">
                     <h3 class="text-xl font-bold text-slate-800 mb-2">${ziar.numar}</h3>
                     <p class="text-slate-600 text-sm mb-6 flex-grow">${ziar.descriere}</p>
                     
-                    <a href="${ziar.linkCanva}" target="_blank" class="block text-center w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white px-5 py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-orange-500/30 transition transform active:scale-95">
+                    <a href="${ziar.linkCanva}" target="_blank" class="block text-center w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white px-5 py-3 rounded-xl font-bold hover:shadow-lg hover:scale-[1.02] transition-transform duration-200 active:scale-95">
                         Răsfoiește Ziarul
                     </a>
                 </div>
