@@ -68,7 +68,7 @@ if (podcastContainer) {
     podcastContainer.innerHTML = '';
 
     episoade.slice(0, limita).forEach(episod => {
-        // OPTIMIZARE: Am schimbat 'transition-all duration-300' cu 'transition-transform duration-200'
+
         podcastContainer.innerHTML += `
             <div class="bg-white/60 backdrop-blur-xl border border-white/50 rounded-2xl shadow-lg hover:shadow-xl transition-transform duration-200 ease-out overflow-hidden flex flex-col group hover:-translate-y-1">
                 <div class="aspect-w-16 aspect-h-9 relative">
@@ -106,7 +106,7 @@ if (ziarContainer) {
                     <h3 class="text-xl font-bold text-slate-800 mb-2">${ziar.numar}</h3>
                     <p class="text-slate-600 text-sm mb-6 flex-grow">${ziar.descriere}</p>
                     
-                    <a href="${ziar.linkCanva}" target="_blank" class="block text-center w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white px-5 py-3 rounded-xl font-bold hover:shadow-lg hover:scale-[1.02] transition-transform duration-200 active:scale-95">
+                    <a href="${ziar.linkCanva}" class="block text-center w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white px-5 py-3 rounded-xl font-bold hover:shadow-lg hover:scale-[1.02] transition-transform duration-200 active:scale-95">
                         Răsfoiește Ziarul
                     </a>
                 </div>
