@@ -37,21 +37,23 @@ const episoade = [
 
 const ziare = [
     {
-        numar: "Ediția 5 - Iarnă 2023",
-        linkCanva: "#", 
-        coperta: "https://via.placeholder.com/300x400?text=Ziar+5", 
-        descriere: "Ediție specială de Crăciun, interviuri cu profesori și colinde."
+    numar: "Ediția 1 - Iarnă 2023",
+    // Atenție: Nu mai punem ../ sau http, doar numele fișierului
+    // pentru că suntem deja în folderul "buzz"
+    linkCanva: "editia1.html", 
+    coperta: "imagini/coperta1.jpg", // Asta rămâne așa dacă scriptul rulează ok
+    descriere: "..."
     },
     {
         numar: "Ediția 4 - Toamnă 2023",
-        linkCanva: "#",
-        coperta: "https://via.placeholder.com/300x400?text=Ziar+4",
+        linkCanva: "editia4.html",
+        coperta: "imagini/coperta4.jpg",
         descriere: "Începutul anului școlar, bobocii și noile reguli din școală."
     },
     {
         numar: "Ediția 3 - Vară 2023",
-        linkCanva: "#",
-        coperta: "https://via.placeholder.com/300x400?text=Ziar+3",
+        linkCanva: "editia3.html",
+        coperta: "imagini/coperta3.jpg",
         descriere: "Recapitulare an școlar și planuri de vacanță."
     }
 ];
