@@ -38,13 +38,11 @@ const episoade = [
         descriere: "Dacă credeai că o carte veche trebuie uitată și nu merită atenție, te invităm să o urmărești pe Alexia în acest interviu, care te va conduce prin toate peripețiile prin care trece Anna în încercarea de a salva cărțile."
     },
     {
-        titlu: "Dialoguri Inspiraționale: GELU DUMINICĂ - Cum să fim mai buni într-o lume dezbinată",
+        titlu: ",,",
         youtubeId: "akJ2pS5G8RE",
         data: "05 Mai 2025",
         descriere: "Gelu ne-a împărtășit perspectivele sale asupra empatiei și solidarității într-o lume tot mai divizată."
     },
-    // Mai adaugă aici...
-    //nWEUG28o5kY
 ];
 
 const ziare = [
@@ -70,13 +68,13 @@ const ziare = [
         numar: "Ediția 4 - Mai 2025",
         linkCanva: "editia4.html",
         coperta: "imagini/coperta4.jpg",
-        descriere: "Recapitulare an școlar și planuri de vacanță."
+        descriere: "Un dialog onest despre echitate si incluziune cu sociologul Gelu Duminică. Oferte universitare, Noaptea muzeelor, recenzii de carte si multe altele."
     },
     {
         numar: "Ediția 3 - Apr 2025",
         linkCanva: "editia3.html",
         coperta: "imagini/coperta3.jpg",
-        descriere: "Recapitulare an școlar și planuri de vacanță."
+        descriere: "Ultima parte a discuției cu judecătorul Cristi Danilet este despre libertăți, responsabilitate in fata legii si drepturi. Ana Stanescu ne povestește despre proiectele PlaYouth, iar noi va aducem cele mai noi informații de la lansarile de carte din Craiova"
     },
     {
         numar: "Ediția 2 - Mar 2025",
