@@ -73,43 +73,43 @@ const ziare = [
     {
         numar: "Ediția 7 - Noi 2025",
         linkCanva: "editia7.html",
-        coperta: "imagini/coperta7.jpeg",
+        coperta: "/imagini/coperta7.jpeg",
         descriere: "Doina Ruști răspunde tuturor întrebărilor noastre despre literatură. Recenzii de carte, cronica de film, biografii și impresii despre Cealaltă voce, un concert cameral de pian cu Marius Manole și Mihai Ritivoiu."
     },
     {
         numar: "Ediția 6 - Oct 2025",
         linkCanva: "editia6.html",
-        coperta: "imagini/coperta6.jpeg",
+        coperta: "/imagini/coperta6.jpeg",
         descriere: "Despre vulnerabilitate și determinare cu actorul Marius Manole, însă incursiunea în arta spectacolului continuă cu cronici și impresii din sala de spectacol."
     },
     {
         numar: "Ediția 5 - Sep 2025",
         linkCanva: "editia5.html",
-        coperta: "imagini/coperta5.jpeg",
+        coperta: "/imagini/coperta5.jpeg",
         descriere: "Despre natură și responsabilitate, despre parcuri naturale și conservarea ariilor naturale cu geologul Florin Stoican, în plus, cronică de film, istorie și muzică."
     },
     {
         numar: "Ediția 4 - Mai 2025",
         linkCanva: "editia4.html",
-        coperta: "imagini/coperta4.jpeg",
+        coperta: "/imagini/coperta4.jpeg",
         descriere: "Un dialog onest despre echitate și incluziune cu sociologul Gelu Duminică. Oferte universitare, Noaptea muzeelor, recenzii de carte și multe altele."
     },
     {
         numar: "Ediția 3 - Apr 2025",
         linkCanva: "editia3.html",
-        coperta: "imagini/coperta3.jpeg",
+        coperta: "/imagini/coperta3.jpeg",
         descriere: "Ultima parte a discuției cu judecătorul Cristi Danileț este despre libertăți, responsabilitate în fața legii și drepturi. Ana Stănescu ne povestește despre proiectele PlaYouth, iar noi vă aducem cele mai noi informații de la lansările de carte din Craiova."
     },
     {
         numar: "Ediția 2 - Mar 2025",
         linkCanva: "editia2.html",
-        coperta: "imagini/coperta2.jpeg",
+        coperta: "/imagini/coperta2.jpeg",
         descriere: "Continuăm discuția cu judecătorul Cristi Danileț despre reguli, bullying&cyberbullying, sancțiuni și pedepse. Discutam si cu Ana Stănescu despre educația prin joacă și civism."
     },
     {
         numar: "Ediția 1 - Feb 2025",
         linkCanva: "editia1.html", 
-        coperta: "imagini/coperta1.jpeg",
+        coperta: "/imagini/coperta1.jpeg",
         descriere: "De vorbă cu judecătorul Cristi Danileț despre cariera juridică, drepturi și libertăți."
     },
 ];
