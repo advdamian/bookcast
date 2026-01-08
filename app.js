@@ -2,31 +2,31 @@
 
 const episoade = [
     {
-        titlu: "Dialoguri Inspiraționale: DOINA RUȘTI",
+        titlu: "Dialoguri Inspiraționale: DOINA RUȘTI.",
         youtubeId: "HZD5_aJ9DVQ", 
         data: "20 Dec 2025",
         descriere: "O incursiune în universul ficțional al Doinei Ruști și secretele scrierii creative."
     },
     {
-        titlu: "Dialoguri Inspiraționale: MARIUS MANOLE - Despre Teatru, Cultură și Provocări",
+        titlu: "Dialoguri Inspiraționale: MARIUS MANOLE - Despre Teatru, Cultură și Provocări.",
         youtubeId: "oDYf1jrP54A", 
         data: "28 Noi 2025",
         descriere: "De data asta, am reușit să facem un Bookcast SUPER special: l-am invitat pe actorul Marius Manole să stea de vorbă cu noi!"
     },
     {
-        titlu: "Dialoguri Inspiraționale: FLORIN STOICAN - Despre Geologie și Natură",
+        titlu: "Dialoguri Inspiraționale: FLORIN STOICAN - Despre Geologie și Natură.",
         youtubeId: "G-mzi7cKPt4", 
         data: "19 Oct 2025",
         descriere: "Florin ne-a arătat că știința nu e deloc plictisitoare și că a proteja natura e una dintre cele mai tari aventuri pe care le poți avea."
     },
     {
-        titlu: "Dialoguri Inspiraționale: ANA STĂNESCU - Despre PlaYouth",
+        titlu: "Dialoguri Inspiraționale: ANA STĂNESCU - Despre PlaYouth.",
         youtubeId: "G3MRwcp_8bI", 
         data: "29 Iun 2025",
-        descriere: "Ne cunoaștem cu Ana din 2022, când au venit în școala noastră printr-un proiect finanțat de Fundația „Nouă ne pasă” "
+        descriere: "Ne cunoaștem cu Ana din 2022, când au venit în școala noastră printr-un proiect finanțat de Fundația „Nouă ne pasă”."
     },
     {
-        titlu: "Dialoguri Inspiraționale: GELU DUMINICĂ - Cum să fim mai buni într-o lume dezbinată",
+        titlu: "Dialoguri Inspiraționale: GELU DUMINICĂ - Cum să fim mai buni într-o lume dezbinată.",
         youtubeId: "akJ2pS5G8RE",
         data: "05 Mai 2025",
         descriere: "Gelu ne-a împărtășit perspectivele sale asupra empatiei și solidarității într-o lume tot mai divizată."
@@ -38,10 +38,34 @@ const episoade = [
         descriere: "Dacă credeai că o carte veche trebuie uitată și nu merită atenție, te invităm să o urmărești pe Alexia în acest interviu, care te va conduce prin toate peripețiile prin care trece Anna în încercarea de a salva cărțile."
     },
     {
-        titlu: ",,",
-        youtubeId: "akJ2pS5G8RE",
-        data: "05 Mai 2025",
-        descriere: "Gelu ne-a împărtășit perspectivele sale asupra empatiei și solidarității într-o lume tot mai divizată."
+        titlu: "Dialoguri Inspiraționale: CRISTI DANILEȚ - Despre Lege, Reguli și Libertate",
+        youtubeId: "KvsN3X98OM4",
+        data: "06 Apr 2025",
+        descriere: "Acest podcast marchează debutul seriei de interviuri 'Dialoguri Inspiraționale', moderate de echipa Bookcast unde avem invitate personalități din diverse domenii de activitate din spațiul public."
+    },
+    {
+        titlu: "Interviu cu autorul: Insula Urâților",
+        youtubeId: "VHjwu6abBj0",
+        data: "16 Mai 2024",
+        descriere: "Am citit Insula Urâților, recent lansată, de autoarea G.C.Kelis și am stat de vorbă cu autoarea, pentru a afla mai multe."
+    },
+    {
+        titlu: "Podcast: Școala pentru Bine și Rău",
+        youtubeId: "6HI5MycJloE",
+        data: "13 Feb 2024",
+        descriere: "Podcastul prezintă un interviu despre seria de cărți „Școala pentru Bine și Rău”, informații despre autor și inclusiv TIPS&TRICKS pentru elevii care susțin examenul de Evaluare Națională."
+    },
+    {
+        titlu: "Interviu cu cititori - Anxietate, decizii - în Biblioteca de la miezul nopții, de Matt Haig.",
+        youtubeId: "MExqi9bsMv4",
+        data: "20 Feb 2023",
+        descriere: "Conform unor studiu din 2021 al Salvati copiii, 1 din 3 copii sau adolescenti s-a confruntat cu stări de anxietate și a avut nevoie de consiliere psihologică, cel mai adesea fiind adolescenții cei afectați, motiv pentru care nu puteam să nu abordăm și noi o astfel de temă."
+    },
+    {
+        titlu: "Despre Bullying si Literatura | Podcast #1",
+        youtubeId: "3FxQnVOzvvA",
+        data: "30 Ian 2023",
+        descriere: "Vorbim despre fenomenul bullying-ului in scoli, despre personalitati marcante care au luptat impotriva violentei si a discriminarii, inspirand generatiile urmatoare."
     },
 ];
 
@@ -49,44 +73,44 @@ const ziare = [
     {
         numar: "Ediția 7 - Noi 2025",
         linkCanva: "editia7.html",
-        coperta: "imagini/coperta7.jpg",
-        descriere: "Recapitulare an școlar și planuri de vacanță."
+        coperta: "imagini/coperta7.jpeg",
+        descriere: "Doina Ruști răspunde tuturor întrebărilor noastre despre literatură. Recenzii de carte, cronica de film, biografii și impresii despre Cealaltă voce, un concert cameral de pian cu Marius Manole și Mihai Ritivoiu."
     },
     {
         numar: "Ediția 6 - Oct 2025",
         linkCanva: "editia6.html",
-        coperta: "imagini/coperta6.jpg",
-        descriere: "Recapitulare an școlar și planuri de vacanță."
+        coperta: "imagini/coperta6.jpeg",
+        descriere: "Despre vulnerabilitate și determinare cu actorul Marius Manole, însă incursiunea în arta spectacolului continuă cu cronici și impresii din sala de spectacol."
     },
     {
         numar: "Ediția 5 - Sep 2025",
         linkCanva: "editia5.html",
-        coperta: "imagini/coperta5.jpg",
-        descriere: "Recapitulare an școlar și planuri de vacanță."
+        coperta: "imagini/coperta5.jpeg",
+        descriere: "Despre natură și responsabilitate, despre parcuri naturale și conservarea ariilor naturale cu geologul Florin Stoican, în plus, cronică de film, istorie și muzică."
     },
     {
         numar: "Ediția 4 - Mai 2025",
         linkCanva: "editia4.html",
-        coperta: "imagini/coperta4.jpg",
-        descriere: "Un dialog onest despre echitate si incluziune cu sociologul Gelu Duminică. Oferte universitare, Noaptea muzeelor, recenzii de carte si multe altele."
+        coperta: "imagini/coperta4.jpeg",
+        descriere: "Un dialog onest despre echitate și incluziune cu sociologul Gelu Duminică. Oferte universitare, Noaptea muzeelor, recenzii de carte și multe altele."
     },
     {
         numar: "Ediția 3 - Apr 2025",
         linkCanva: "editia3.html",
-        coperta: "imagini/coperta3.jpg",
-        descriere: "Ultima parte a discuției cu judecătorul Cristi Danilet este despre libertăți, responsabilitate in fata legii si drepturi. Ana Stanescu ne povestește despre proiectele PlaYouth, iar noi va aducem cele mai noi informații de la lansarile de carte din Craiova"
+        coperta: "imagini/coperta3.jpeg",
+        descriere: "Ultima parte a discuției cu judecătorul Cristi Danileț este despre libertăți, responsabilitate în fața legii și drepturi. Ana Stănescu ne povestește despre proiectele PlaYouth, iar noi vă aducem cele mai noi informații de la lansările de carte din Craiova."
     },
     {
         numar: "Ediția 2 - Mar 2025",
         linkCanva: "editia2.html",
-        coperta: "imagini/coperta2.jpg",
-        descriere: "Continuăm discuția cu judecătorul Cristi Danilet despre reguli, bullying&cyberbullying, sancțiuni și pedepse. Discutam si cu Ana Stanescu despre educația prin joacă și civism."
+        coperta: "imagini/coperta2.jpeg",
+        descriere: "Continuăm discuția cu judecătorul Cristi Danileț despre reguli, bullying&cyberbullying, sancțiuni și pedepse. Discutam si cu Ana Stănescu despre educația prin joacă și civism."
     },
     {
         numar: "Ediția 1 - Feb 2025",
         linkCanva: "editia1.html", 
-        coperta: "imagini/coperta1.jpg",
-        descriere: "De vorbă cu judecătorul Cristi Danilet despre cariera juridică, drepturi și libertăți."
+        coperta: "imagini/coperta1.jpeg",
+        descriere: "De vorbă cu judecătorul Cristi Danileț despre cariera juridică, drepturi și libertăți."
     },
 ];
 

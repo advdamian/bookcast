@@ -190,7 +190,7 @@
                                 <div class="form__label-row ">
                                   <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Introdu adresa de e-mail</label>
                                   <div class="entry__field">
-                                    <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                                    <input class="input " type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="exemplu@domeniu.com" data-required="true" required />
                                   </div>
                                 </div>
                                 <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
@@ -205,7 +205,7 @@
                                   <div class="entry__choice">
                                     <label>
                                       <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
-                                      <span class="checkbox checkbox_tick_positive" style="margin-left:4px"></span><span style="font-size:14px; text-align:left; font-family:Futura, sans-serif; color:#3C4858; background-color:transparent;"><p>Sunt de acord să primesc noutățile și accept termenii de confidențialitate Brevo.</p><span data-required="*" style="display: inline;" class="entry__label entry__label_optin"></span></span> </label>
+                                      <span class="checkbox checkbox_tick_positive" style="margin-left:4px"></span><span style="font-size:14px; text-align:left; font-family:Futura, sans-serif; color:#3C4858; background-color:transparent;">Sunt de acord să primesc noutățile și accept termenii de confidențialitate Brevo.<span data-required="*" style="display: inline;" class="entry__label entry__label_optin"></span></span> </label>
                                   </div>
                                 </div>
                                 <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
@@ -227,7 +227,7 @@
                                 <div class="form__label-row ">
                                   <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="FIRSTNAME">Introdu numele tău (opțional)</label>
                                   <div class="entry__field">
-                                    <input class="input " maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="FIRSTNAME" />
+                                    <input class="input " maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="Ion" />
                                   </div>
                                 </div>
                                 <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
@@ -268,7 +268,7 @@
                             </div>
                           </div>
                           <input type="text" name="email_address_check" value="" class="input--hidden">
-                          <input type="hidden" name="locale" value="en">
+                          <input type="hidden" name="locale" value="ro">
                         </form>
                       </div>
                     </div>
@@ -293,16 +293,16 @@
     
     <script>
       window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-      window.LOCALE = 'en';
+      window.LOCALE = 'ro';
       window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Ceva nu a mers bine. Verifică informațiile și încearcă din nou.";
       window.REQUIRED_ERROR_MESSAGE = "Acest câmp este obligatoriu. ";
       window.GENERIC_INVALID_MESSAGE = "Ceva nu a mers bine. Verifică informațiile și încearcă din nou.";
       window.translation = {
         common: {
-          selectedList: '{quantity} list selected',
-          selectedLists: '{quantity} lists selected',
-          selectedOption: '{quantity} selected',
-          selectedOptions: '{quantity} selected',
+          selectedList: '{quantity} listă selectată',
+          selectedLists: '{quantity} liste selectate',
+          selectedOption: '{quantity} opțiune selectată',
+          selectedOptions: '{quantity} opțiuni selectate',
         }
       };
       var AUTOHIDE = Boolean(1);
