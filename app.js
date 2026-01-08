@@ -10,7 +10,7 @@ const episoade = [
     {
         titlu: "Dialoguri Inspiraționale: MARIUS MANOLE - Despre Teatru, Cultură și Provocări",
         youtubeId: "oDYf1jrP54A", 
-        data: "28 Nov 2025",
+        data: "28 Noi 2025",
         descriere: "De data asta, am reușit să facem un Bookcast SUPER special: l-am invitat pe actorul Marius Manole să stea de vorbă cu noi!"
     },
     {
@@ -20,42 +20,76 @@ const episoade = [
         descriere: "Florin ne-a arătat că știința nu e deloc plictisitoare și că a proteja natura e una dintre cele mai tari aventuri pe care le poți avea."
     },
     {
-        titlu: "aaaaa",
-        youtubeId: "G-mzi7cKPt4", 
-        data: "19 Oct 2025",
-        descriere: "Florin ne-a arătat că știința nu e deloc plictisitoare și că a proteja natura e una dintre cele mai tari aventuri pe care le poți avea."
+        titlu: "Dialoguri Inspiraționale: ANA STĂNESCU - Despre PlaYouth",
+        youtubeId: "G3MRwcp_8bI", 
+        data: "29 Iun 2025",
+        descriere: "Ne cunoaștem cu Ana din 2022, când au venit în școala noastră printr-un proiect finanțat de Fundația „Nouă ne pasă” "
     },
     {
-        titlu: "bbbb",
-        youtubeId: "G-mzi7cKPt4",
-        data: "19 Oct 2025",
-        descriere: "Florin ne-a arătat că știința nu e deloc plictisitoare și că a proteja natura e una dintre cele mai tari aventuri pe care le poți avea."
+        titlu: "Dialoguri Inspiraționale: GELU DUMINICĂ - Cum să fim mai buni într-o lume dezbinată",
+        youtubeId: "akJ2pS5G8RE",
+        data: "05 Mai 2025",
+        descriere: "Gelu ne-a împărtășit perspectivele sale asupra empatiei și solidarității într-o lume tot mai divizată."
     },
-    
+    {
+        titlu: "Interviuri cu cititori: Despre empatie și iubirea pentru lectură.",
+        youtubeId: "nWEUG28o5kY",
+        data: "04 Mai 2025",
+        descriere: "Dacă credeai că o carte veche trebuie uitată și nu merită atenție, te invităm să o urmărești pe Alexia în acest interviu, care te va conduce prin toate peripețiile prin care trece Anna în încercarea de a salva cărțile."
+    },
+    {
+        titlu: "Dialoguri Inspiraționale: GELU DUMINICĂ - Cum să fim mai buni într-o lume dezbinată",
+        youtubeId: "akJ2pS5G8RE",
+        data: "05 Mai 2025",
+        descriere: "Gelu ne-a împărtășit perspectivele sale asupra empatiei și solidarității într-o lume tot mai divizată."
+    },
     // Mai adaugă aici...
+    //nWEUG28o5kY
 ];
 
 const ziare = [
     {
-    numar: "Ediția 1 - Iarnă 2023",
-    // Atenție: Nu mai punem ../ sau http, doar numele fișierului
-    // pentru că suntem deja în folderul "buzz"
-    linkCanva: "editia1.html", 
-    coperta: "imagini/coperta1.jpg", // Asta rămâne așa dacă scriptul rulează ok
-    descriere: "..."
+        numar: "Ediția 7 - Noi 2025",
+        linkCanva: "editia7.html",
+        coperta: "imagini/coperta7.jpg",
+        descriere: "Recapitulare an școlar și planuri de vacanță."
     },
     {
-        numar: "Ediția 4 - Toamnă 2023",
+        numar: "Ediția 6 - Oct 2025",
+        linkCanva: "editia6.html",
+        coperta: "imagini/coperta6.jpg",
+        descriere: "Recapitulare an școlar și planuri de vacanță."
+    },
+    {
+        numar: "Ediția 5 - Sep 2025",
+        linkCanva: "editia5.html",
+        coperta: "imagini/coperta5.jpg",
+        descriere: "Recapitulare an școlar și planuri de vacanță."
+    },
+    {
+        numar: "Ediția 4 - Mai 2025",
         linkCanva: "editia4.html",
         coperta: "imagini/coperta4.jpg",
-        descriere: "Începutul anului școlar, bobocii și noile reguli din școală."
+        descriere: "Recapitulare an școlar și planuri de vacanță."
     },
     {
-        numar: "Ediția 3 - Vară 2023",
+        numar: "Ediția 3 - Apr 2025",
         linkCanva: "editia3.html",
         coperta: "imagini/coperta3.jpg",
         descriere: "Recapitulare an școlar și planuri de vacanță."
-    }
+    },
+    {
+        numar: "Ediția 2 - Mar 2025",
+        linkCanva: "editia2.html",
+        coperta: "imagini/coperta2.jpg",
+        descriere: "Continuăm discuția cu judecătorul Cristi Danilet despre reguli, bullying&cyberbullying, sancțiuni și pedepse. Discutam si cu Ana Stanescu despre educația prin joacă și civism."
+    },
+    {
+        numar: "Ediția 1 - Feb 2025",
+        linkCanva: "editia1.html", 
+        coperta: "imagini/coperta1.jpg",
+        descriere: "De vorbă cu judecătorul Cristi Danilet despre cariera juridică, drepturi și libertăți."
+    },
 ];
 
 // --- LOGICA DE AFIȘARE (OPTIMIZATĂ) ---

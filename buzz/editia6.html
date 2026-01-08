@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookcast Buzz- Ediția 6</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../iconita.png">
+    <style>
+        body { font-family: 'Jost', sans-serif; }
+        .liquid-bg-static {
+            background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen">
+
+    <nav class="bg-white/70 backdrop-blur-md border-b border-white/40 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <img src="../logo.png" alt="Logo Bookcast" class="h-14 w-auto hover:rotate-3 transition"> 
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="../index.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Acasă</a>
+                    <a href="index.html" class="text-amber-600 font-bold">Ziarul Buzz</a>
+                    <a href="../podcast.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Podcast</a>
+                    <a href="../contact.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <a href="index.html" class="text-amber-600 font-bold mr-4">Înapoi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="flex-grow py-8 px-4">
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="mb-6">
+                <a href="index.html" class="inline-flex items-center text-slate-600 hover:text-indigo-600 transition font-medium bg-white/50 px-4 py-2 rounded-full border border-white/60 shadow-sm hover:shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Înapoi la Arhivă
+                </a>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-slate-200">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
+                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 0; margin-bottom: 0; overflow: hidden;
+                will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAG5Qv7BULY/tvuD9spZWShDGaQh7ioY8w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="text-center mt-6 text-slate-500 text-sm">
+                <p>Nu se încarcă ziarul? <a href="https://www.canva.com/design/DAG5Qv7BULY/tvuD9spZWShDGaQh7ioY8w/view" target="_blank" class="text-indigo-600 underline">Deschide-l direct în Canva</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-slate-900/90 backdrop-blur-md text-gray-300 py-8 text-center border-t border-gray-800">
+        <p class="opacity-80 text-sm">© 2026 Bookcast.</p>
+    </footer>
+
+</body>
+</html>
