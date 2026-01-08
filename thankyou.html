@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookcast - Mulțumim pentru abonare!</title>
+    
+    <meta name="robots" content="noindex">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="iconita.png">
+    
+    <style>
+        body { font-family: 'Jost', sans-serif; }
+        .liquid-bg-static {
+            background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
+            background-attachment: fixed;
+        }
+        /* Animație mică pentru iconiță */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen">
+
+    <nav class="bg-white/80 backdrop-blur-md border-b border-white/50 sticky top-0 z-50 transition-colors duration-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Logo Bookcast" class="h-14 w-auto transform hover:scale-105 transition-transform duration-200"> 
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="/" class="text-indigo-600 bg-white/60 px-3 py-1 rounded-lg border border-indigo-100">Acasă</a>
+                    <a href="/buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
+                    <a href="/podcast.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
+                    <a href="/contact.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t p-4 space-y-2">
+            <a href="/" class="block py-2 text-indigo-600">Acasă</a>
+            <a href="/buzz/" class="block py-2 hover:text-indigo-600">Ziarul Buzz</a>
+            <a href="/podcast.html" class="block py-2 hover:text-indigo-600">Podcast</a>
+            <a href="/contact.html" class="block py-2 hover:text-indigo-600">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 relative overflow-hidden py-20">
+        
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-green-200/40 to-emerald-200/40 rounded-full blur-3xl -z-10"></div>
+
+        <div class="text-8xl mb-6 floating-icon">
+            🎉
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
+            Mulțumim!
+        </h1>
+        
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6">
+            Ești oficial în gașcă.
+        </h2>
+        
+        <div class="bg-white/60 backdrop-blur-sm border border-white/80 p-8 rounded-3xl max-w-lg mx-auto shadow-xl mb-10">
+            <p class="text-lg text-slate-700 font-medium mb-2">
+                Mai ai un singur pas mic:
+            </p>
+            <p class="text-slate-600 leading-relaxed">
+                Verifică-ți emailul chiar acum și apasă pe butonul de <strong>Confirmare</strong>. 
+                <br><span class="text-sm text-slate-500">(Dacă nu îl găsești, verifică și în folderul Spam sau Promoții)</span>
+            </p>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row justify-center gap-5">
+            <a href="/" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:-translate-y-1 transform transition-all duration-200">
+                🏠 Înapoi la Site
+            </a>
+            <a href="/buzz/" class="bg-white/80 backdrop-blur-sm border border-slate-200 text-amber-600 px-8 py-4 rounded-full font-bold hover:bg-white hover:-translate-y-1 transform transition-all duration-200 shadow-md">
+                📖 Citește Ziarul
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-gray-300 py-10 text-center border-t border-gray-800">
+        <p class="opacity-80 text-sm">© 2026 Bookcast.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
