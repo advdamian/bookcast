@@ -2,7 +2,13 @@
 
 const episoade = [
     {
-        titlu: "Dialoguri Inspiraționale: DOINA RUȘTI.",
+        titlu: "Dialoguri Inspiraționale: ALINA DUMITRACHE - Despre modelul finlandez de educație.",
+        youtubeId: "34A3xWMzziA", 
+        data: "21 Ian 2026",
+        descriere: "Vorbim in acest episod cu Alina Dumitrache, care ne va vorbi atât din rolul ei de director al Liceului Romano-Finlandez din București, cât si de psiholog si părinte, despre educație, despre modelul finlandez de educație, despre relația școală - familie și nu in ultimul rând despre managementul emoțiilor."
+    },    
+    {
+        titlu: "Dialoguri Inspiraționale: DOINA RUȘTI - ADN-ul poveștilor Doinei Ruști",
         youtubeId: "HZD5_aJ9DVQ", 
         data: "20 Dec 2025",
         descriere: "O incursiune în universul ficțional al Doinei Ruști și secretele scrierii creative."
