@@ -77,6 +77,12 @@ const episoade = [
 
 const ziare = [
     {
+        numar: "Ediția 8 - Dec 2025",
+        linkCanva: "editia8.html",
+        coperta: "/imagini/coperta8.jpeg",
+        descriere: "Continuăm interviul cu scriitoarea Doina Ruști, după care ne uităm cu mai multă atenție la noi, la emoțiile noastre și la școală, așa cum este ea astăzi, cu provocări, cu probleme, cu oportunități și cu multă dedicare, cu Alina Dumitrache, psiholog și director al Liceului Româno-Finlandez din București."
+    },
+    {
         numar: "Ediția 7 - Noi 2025",
         linkCanva: "editia7.html",
         coperta: "/imagini/coperta7.jpeg",
