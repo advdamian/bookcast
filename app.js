@@ -2,6 +2,12 @@
 
 const episoade = [
     {
+        titlu: "Dialoguri Inspiraționale: MIRCEA MOGOȘEANU - Despre Teatru, de pe băncile școlii, până pe scena.",
+        youtubeId: "QxnBYsFLTek", 
+        data: "21 Ian 2026",
+        descriere: "Vorbim in acest episod cu Mircea Mogoșeanu, care ne va vorbi despre parcursul său în teatru, de la școală până la scena."
+    },  
+    {
         titlu: "Dialoguri Inspiraționale: ALINA DUMITRACHE - Despre modelul finlandez de educație.",
         youtubeId: "34A3xWMzziA", 
         data: "21 Ian 2026",
