@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookcast - Pagina nu a fost găsită (404)</title>
-    
-    <meta name="robots" content="noindex"> <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bookcast - Livada Noastră</title>
+    <meta name="description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opinile elevilor într-un format digital modern.">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/imagini/iconita.png">
-    
+
+    <link rel="icon" type="image/png" href="../imagini/iconita.png">
+
     <style>
         body { font-family: 'Jost', sans-serif; }
         .liquid-bg-static {
@@ -21,19 +22,20 @@
 </head>
 <body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white/80 backdrop-blur-md border-b border-white/50 sticky top-0 z-50 transition-colors duration-200">
+    <nav class="bg-white/70 backdrop-blur-md border-b border-white/40 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-3">
-                <a href="/" class="flex items-center space-x-2">
-                    <img src="/imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto transform hover:scale-105 transition-transform duration-200"> 
+                <a href="../" class="flex items-center space-x-2">
+                    <img src="../imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto hover:rotate-3 transition"> 
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
-                    <a href="/buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
-                    <a href="/podcast/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
-                    <a href="/livada/" class="text-slate-600 hover:text-green-600 font-medium transition-colors duration-200">Livada Noastră</a>
-                    <a href="/contact/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
+                    <a href="../" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
+                    <a href="../buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
+                    <a href="../podcast/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
+                    <a href="../livada/" class="text-green-600 font-bold bg-green-50 px-3 py-1 rounded-lg border border-green-200">Livada Noastră</a>
+                    <a href="../contact/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
                 </div>
+                
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
                         <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
@@ -41,38 +43,33 @@
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t p-4 space-y-2">
-            <a href="/" class="block py-2 text-indigo-600">Acasă</a>
-            <a href="/buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
-            <a href="/podcast/" class="block py-2 hover:text-indigo-600">Podcast</a>
-            <a href="/livada/" class="block py-2 hover:text-green-600">Livada Noastră</a>
-            <a href="/contact/" class="block py-2 hover:text-indigo-600">Contact</a>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-xl border-t p-4 space-y-2">
+            <a href="../" class="block py-2 hover:text-indigo-600">Acasă</a>
+            <a href="../buzz/" class="block py-2 text-amber-600">Ziarul Buzz</a>
+            <a href="../podcast/" class="block py-2 hover:text-indigo-600">Podcast</a>
+            <a href="../livada/" class="block py-2 hover:text-green-600 font-bold">Livada Noastră</a>
+            <a href="../contact/" class="block py-2 hover:text-indigo-600">Contact</a>
         </div>
     </nav>
 
-    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 relative overflow-hidden py-20">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-purple-200/40 to-blue-200/40 rounded-full blur-3xl -z-10"></div>
-
-        <h1 class="text-8xl md:text-9xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
-            404
-        </h1>
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6">
-            Ups! Ne-am rătăcit.
-        </h2>
-        <p class="text-lg text-slate-600 mb-10 max-w-lg mx-auto leading-relaxed">
-            Pagina pe care o cauți nu există sau a fost mutată. 
-            Nu-ți face griji, se întâmplă și la case mai mari!
-        </p>
-        
-        <div class="flex flex-col sm:flex-row justify-center gap-5">
-            <a href="/" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:-translate-y-1 transform transition-all duration-200">
-                Înapoi Acasă
+    <header class="relative py-16 px-4">
+        <div class="max-w-4xl mx-auto bg-gradient-to-br from-green-400/90 to-blue-500/90 backdrop-blur-lg rounded-3xl p-10 text-center text-white shadow-2xl shadow-green-500/20 border border-white/20">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Livada Noastră - În construcție</h1>
+            <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto font-light">În curând: Descoperă poveștile livezii din spatele școlii noastre. Găsește codurile QR asociate fiecărui copac sau caută-i în lista de mai jos.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#livada-container" class="bg-white text-green-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">
+                Vezi livada
             </a>
-            <a href="/buzz/" class="bg-white/80 backdrop-blur-sm border border-slate-200 text-amber-600 px-8 py-4 rounded-full font-bold hover:bg-white hover:-translate-y-1 transform transition-all duration-200 shadow-md">
-                Vezi Ziarul
-            </a>
+            </div>
         </div>
-    </main>
+    </header>
+
+    <section class="py-12 max-w-6xl mx-auto px-4 flex-grow">
+        <h2 class="text-3xl font-bold mb-8 text-slate-800 border-b border-indigo-200 pb-4"> Livada:</h2>
+        <div id="livada-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        <p id="livada-loading-msg" class="text-center text-slate-400 italic">Se încarcă livada...</p>
+    </section>
 
     <footer class="bg-slate-900 text-gray-300 py-10 text-center mt-auto border-t border-gray-800">
         <div class="flex justify-center space-x-6 mb-4">
@@ -93,6 +90,7 @@
         </div>
     </footer>
 
-   <script src="/app.js"></script>
+    <script src="../app.js"></script>
+    <script src="../livada.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="iconita.png">
+    <link rel="icon" type="image/png" href="../imagini/iconita.png">
     <style>
         body { font-family: 'Jost', sans-serif; }
         .liquid-bg-static {
@@ -23,14 +23,15 @@
     <nav class="bg-white/70 backdrop-blur-md border-b border-white/40 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-3">
-                <a href="index.html" class="flex items-center space-x-2">
-                    <img src="logo.png" alt="Logo Bookcast" class="h-14 w-auto hover:rotate-3 transition">
+                <a href="../" class="flex items-center space-x-2">
+                    <img src="../imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto transform hover:scale-105 transition-transform duration-200">
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
-                    <a href="/buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
-                    <a href="/podcast.html" class="text-indigo-600 font-bold bg-white/60 px-3 py-1 rounded-lg border border-indigo-100">Podcast</a>
-                    <a href="/contact.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
+                    <a href="../" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
+                    <a href="../buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
+                    <a href="../podcast/" class="text-indigo-600 font-bold bg-white/60 px-3 py-1 rounded-lg border border-indigo-100">Podcast</a>
+                    <a href="../livada/" class="text-slate-600 hover:text-green-600 font-medium transition-colors duration-200">Livada Noastră</a>
+                    <a href="../contact/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
@@ -40,10 +41,11 @@
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-xl border-t p-4 space-y-2">
-            <a href="/" class="block py-2 hover:text-indigo-600">Acasă</a>
-            <a href="/buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
-            <a href="/podcast.html" class="block py-2 text-indigo-600 font-bold">Podcast</a>
-            <a href="/contact.html" class="block py-2 hover:text-indigo-600">Contact</a>
+            <a href="../" class="block py-2 hover:text-indigo-600">Acasă</a>
+            <a href="../buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
+            <a href="../podcast/" class="block py-2 text-indigo-600 font-bold">Podcast</a>
+            <a href="../livada/" class="block py-2 hover:text-green-600">Livada Noastră</a>
+            <a href="../contact/" class="block py-2 hover:text-indigo-600">Contact</a>
         </div>
     </nav>
 
@@ -87,12 +89,13 @@
         <div class="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
             <p class="opacity-60 text-sm">© 2026 Bookcast.</p>
 
-            <a href="https://www.instagram.com/damik.media/" target="_blank" class="text-xs opacity-30 hover:opacity-100 transition-opacity duration-300 mt-2 md:mt-0 font-light font-mono group">
-                Designed & Developed by <span class="font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">DamikMedia</span>
+            <a href="https://www.instagram.com/advshoots/" target="_blank" class="text-xs opacity-30 hover:opacity-100 transition-opacity duration-300 mt-2 md:mt-0 font-light font-mono group">
+                Designed & Developed by <span class="font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">advshoots</span>
             </a>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
+    <script src="../podcast.js"></script>
 </body>
 </html>

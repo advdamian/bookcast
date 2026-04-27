@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="iconita.png">
+    <link rel="icon" type="image/png" href="imagini/iconita.png">
     
     <style>
         body { font-family: 'Jost', sans-serif; }
@@ -19,7 +19,6 @@
             background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
             background-attachment: fixed;
         }
-        /* Animație mică pentru iconiță */
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -36,13 +35,14 @@
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-3">
                 <a href="/" class="flex items-center space-x-2">
-                    <img src="logo.png" alt="Logo Bookcast" class="h-14 w-auto transform hover:scale-105 transition-transform duration-200"> 
+                    <img src="imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto transform hover:scale-105 transition-transform duration-200"> 
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
-                    <a href="/buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
-                    <a href="/podcast.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
-                    <a href="/contact.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
+                    <a href="buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
+                    <a href="podcast/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
+                    <a href="livada/" class="text-slate-600 hover:text-green-600 font-medium transition-colors duration-200">Livada Noastră</a>
+                    <a href="contact/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
@@ -53,9 +53,10 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t p-4 space-y-2">
             <a href="/" class="block py-2 text-indigo-600">Acasă</a>
-            <a href="/buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
-            <a href="/podcast.html" class="block py-2 hover:text-indigo-600">Podcast</a>
-            <a href="/contact.html" class="block py-2 hover:text-indigo-600">Contact</a>
+            <a href="buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
+            <a href="podcast/" class="block py-2 hover:text-indigo-600">Podcast</a>
+            <a href="livada/" class="block py-2 hover:text-green-600">Livada Noastră</a>
+            <a href="contact/" class="block py-2 hover:text-indigo-600">Contact</a>
         </div>
     </nav>
 
@@ -87,7 +88,7 @@
             <a href="/" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:-translate-y-1 transform transition-all duration-200">
                 🏠 Înapoi la Site
             </a>
-            <a href="/buzz/" class="bg-white/80 backdrop-blur-sm border border-slate-200 text-amber-600 px-8 py-4 rounded-full font-bold hover:bg-white hover:-translate-y-1 transform transition-all duration-200 shadow-md">
+            <a href="buzz/" class="bg-white/80 backdrop-blur-sm border border-slate-200 text-amber-600 px-8 py-4 rounded-full font-bold hover:bg-white hover:-translate-y-1 transform transition-all duration-200 shadow-md">
                 📖 Citește Ziarul
             </a>
         </div>
@@ -106,19 +107,12 @@
         <div class="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
             <p class="opacity-60 text-sm">© 2026 Bookcast.</p>
 
-            <a href="https://www.instagram.com/damik.media/" target="_blank" class="text-xs opacity-30 hover:opacity-100 transition-opacity duration-300 mt-2 md:mt-0 font-light font-mono group">
-                Designed & Developed by <span class="font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">DamikMedia</span>
+            <a href="https://www.instagram.com/advshoots/" target="_blank" class="text-xs opacity-30 hover:opacity-100 transition-opacity duration-300 mt-2 md:mt-0 font-light font-mono group">
+                Designed & Developed by <span class="font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">advshoots</span>
             </a>
         </div>
     </footer>
 
-    <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
+    <script src="/app.js"></script>
 </body>
 </html>
