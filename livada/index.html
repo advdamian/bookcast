@@ -58,18 +58,47 @@
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Livada Noastră - În construcție</h1>
             <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto font-light">În curând: Descoperă poveștile livezii din spatele școlii noastre. Găsește codurile QR asociate fiecărui copac sau caută-i în lista de mai jos.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#livada-container" class="bg-white text-green-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">
-                Vezi livada
-            </a>
+                <a href="#sectiune-livada" class="bg-white text-green-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">
+                    Vezi livada
+                </a>
             </div>
         </div>
     </header>
 
-    <section class="py-12 max-w-6xl mx-auto px-4 flex-grow">
-        <h2 class="text-3xl font-bold mb-8 text-slate-800 border-b border-indigo-200 pb-4"> Livada:</h2>
-        <div id="livada-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
-        <p id="livada-loading-msg" class="text-center text-slate-400 italic">Se încarcă livada...</p>
-    </section>
+    <section id="sectiune-livada" class="py-12 max-w-6xl mx-auto px-4 flex-grow">
+    
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-indigo-800 mb-2 flex items-center">
+                <span class="mr-3">📚</span> Livadă Literară
+            </h2>
+            <p class="text-slate-600 mb-8 border-b border-indigo-100 pb-4">Specii de arbori care au inspirat scriitorii și poeziile noastre.</p>
+            <div id="container-livada-literara" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-green-800 mb-2 flex items-center">
+                <span class="mr-3">🍎</span> Livada cu Pomi Fructiferi
+            </h2>
+            <p class="text-slate-600 mb-8 border-b border-green-100 pb-4">Pomii noștri care ne oferă fructe proaspete în fiecare an.</p>
+            <div id="container-pomi-fructiferi" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 flex items-center">
+                <span class="mr-3">🌿</span> Spații Verzi & Ornamente
+            </h2>
+            <p class="text-slate-600 mb-8 border-b border-slate-200 pb-4">Arbuști și flori care înfrumusețează curtea școlii.</p>
+            <div id="container-spatii-verzi" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+        </div>
+
+        <div>
+            <h2 class="text-3xl font-bold text-amber-700 mb-2 flex items-center">
+                <span class="mr-3">🍯</span> Grădini Tematice
+            </h2>
+            <p class="text-slate-600 mb-8 border-b border-amber-100 pb-4">Zone dedicate plantelor aromatice și medicinale.</p>
+            <div id="container-gradini-tematice" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+        </div>
+</section>
 
     <footer class="bg-slate-900 text-gray-300 py-10 text-center mt-auto border-t border-gray-800">
         <div class="flex justify-center space-x-6 mb-4">
