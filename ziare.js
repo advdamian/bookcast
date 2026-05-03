@@ -1,5 +1,11 @@
 const ziare = [
     {
+        numar: "Ediția 9 - Ian 2026",
+        linkCanva: "editia9.html",
+        coperta: "/imagini/coperta9.jpeg",
+        descriere: "Vorbim cu actorul Mircea Mogoșeanu despre școală, despre parcursul unui actor tânăr, de la micuțele piese de teatru din liceu, la scena unui teatru mare. Ne amintim apoi de Eminescu și povestim despre un spectacol inedit și nu uităm, desigur să vorbim despre ce cărți mai citim."
+    },
+    {
         numar: "Ediția 8 - Dec 2025",
         linkCanva: "editia8.html",
         coperta: "/imagini/coperta8.jpeg",
@@ -56,7 +62,6 @@ if (ziarContainer) {
     if(loadingMsg) loadingMsg.style.display = 'none';
 
     ziare.forEach(ziar => {
-        // OPTIMIZARE: La fel, tranziții mai rapide și specifice
         ziarContainer.innerHTML += `
             <div class="bg-white/60 backdrop-blur-xl border border-white/50 rounded-2xl shadow-lg hover:shadow-xl transition-transform duration-200 ease-out overflow-hidden flex flex-col group hover:-translate-y-1 h-full">
                 <div class="bg-gradient-to-br from-amber-100/50 to-orange-100/50 h-64 flex justify-center items-center p-4 relative overflow-hidden">
