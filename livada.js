@@ -2,7 +2,7 @@ const livada = [
     {
         titlu: "Rhododendron",
         categorie: "spatii-verzi",
-        imagine: "../imagini/images.jpeg",
+        imagine: "../imagini/rhododendron.jpeg",
         link: "rhododendron.html",
         descriere: "Rhododendronul este un arbust ornamental cunoscut pentru florile sale spectaculoase."
     },
@@ -70,11 +70,11 @@ const livada = [
         descriere: "Hibiscus este un arbust ornamental cunoscut pentru florile sale mari și colorate."
     },
     {
-        titlu: "Panseluță",
+        titlu: "Leandru",
         categorie: "pomi-fructiferi",
-        link: "panseluta.html",
-        imagine: "../imagini/panseluta.jpeg",
-        descriere: "Panseluța este o plantă perenă cunoscută pentru florile sale colorate și aspectul său ornamental."
+        link: "leandru.html",
+        imagine: "../imagini/leandru.jpeg",
+        descriere: "Leandrul este un arbust ornamental cunoscut pentru florile sale parfumate și aspectul său luxuriant."
     },
     {
         titlu: "Măr",
@@ -115,7 +115,7 @@ const livada = [
         titlu: "Cireș",
         categorie: "pomi-fructiferi",
         link: "cires.html",
-        imagine: "../imagini/cireș.jpeg",
+        imagine: "../imagini/cires.jpeg",
         descriere: "Cireșul este un arbust ornamental cunoscut pentru florile și fructele sale."
     },
     {
