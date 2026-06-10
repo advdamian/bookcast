@@ -8,21 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../imagini/iconita.png">
-    <style>
-        body { font-family: 'Jost', sans-serif; }
-        .liquid-bg-static {
-            background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
-            background-attachment: fixed;
-        }
-    </style>
-</head>
+    
+
+    <link rel="stylesheet" href="../global.css">
+
+    <!-- SEO and Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bookcast Buzz - Ediția 6">
+    <meta property="og:description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opiniile elevilor într-un format digital modern.">
+    <meta property="og:image" content="https://bookcast.ro/iconita.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Bookcast Buzz - Ediția 6">
+    <meta property="twitter:description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opiniile elevilor într-un format digital modern.">
+    <meta property="twitter:image" content="https://bookcast.ro/iconita.jpg">
+
+    </head>
 <body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen">
 
     <nav class="bg-white/70 backdrop-blur-md border-b border-white/40 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-3">
                 <a href="../buzz/" class="flex items-center space-x-2">
-                    <img src="../imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto hover:rotate-3 transition"> 
+                    <img loading="lazy" src="../imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto hover:rotate-3 transition"> 
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="../" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
@@ -68,5 +75,28 @@
         <p class="opacity-80 text-sm">© 2026 Bookcast.</p>
     </footer>
 
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="fixed bottom-6 left-6 z-50 bg-white/30 backdrop-blur-md border border-white/40 shadow-lg text-slate-600 hover:text-indigo-600 hover:bg-white/80 px-4 py-2 rounded-full text-sm font-bold transition-all duration-500 flex items-center gap-1 hover:-translate-y-1 hover:shadow-xl opacity-0 pointer-events-none translate-y-10">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg> sus
+    </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTop = document.getElementById('back-to-top');
+            if (backToTop) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTop.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
+                    } else {
+                        backToTop.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
+                    }
+                });
+                backToTop.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

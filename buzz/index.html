@@ -12,21 +12,28 @@
     
     <link rel="icon" type="image/png" href="../imagini/iconita.png">
     
-    <style>
-        body { font-family: 'Jost', sans-serif; }
-        .liquid-bg-static {
-            background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
-            background-attachment: fixed;
-        }
-    </style>
-</head>
+    
+
+    <link rel="stylesheet" href="../global.css">
+
+    <!-- SEO and Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bookcast - Ziarul Buzz">
+    <meta property="og:description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opinile elevilor într-un format digital modern.">
+    <meta property="og:image" content="https://bookcast.ro/iconita.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Bookcast - Ziarul Buzz">
+    <meta property="twitter:description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opinile elevilor într-un format digital modern.">
+    <meta property="twitter:image" content="https://bookcast.ro/iconita.jpg">
+
+    </head>
 <body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen">
 
     <nav class="bg-white/70 backdrop-blur-md border-b border-white/40 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-3">
                 <a href="../" class="flex items-center space-x-2">
-                    <img src="../imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto hover:rotate-3 transition"> 
+                    <img loading="lazy" src="../imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto hover:rotate-3 transition"> 
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="../" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
@@ -52,20 +59,33 @@
         </div>
     </nav>
 
-    <header class="relative py-16 px-4">
-        <div class="max-w-4xl mx-auto bg-gradient-to-br from-amber-400/90 to-orange-500/90 backdrop-blur-lg rounded-3xl p-10 text-center text-white shadow-2xl shadow-orange-500/20 border border-white/20">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Arhiva Bookcast Buzz</h1>
-            <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto font-light">Răsfoiește munca echipei noastre de redacție. Articole, opinii și noutăți școlare într-un format digital modern.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#ziar-container" class="bg-white text-amber-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-lg">
-                Vezi Ziarele
-            </a>
+    <header class="py-12 md:py-16 px-4 relative z-10">
+        <div class="max-w-4xl mx-auto bg-gradient-to-br from-amber-400 to-orange-500 rounded-3xl p-8 text-center text-white shadow-[0_20px_50px_rgba(245,158,11,0.3)] border border-white/20 relative overflow-hidden transition-all duration-300 hover:shadow-[0_30px_60px_rgba(245,158,11,0.4)] hover:-translate-y-1 group">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-orange-400/20 rounded-full blur-3xl"></div>
+            <div class="relative z-10">
+                <span class="inline-block py-1 px-3 rounded-full bg-white/20 border border-white/30 text-white text-sm font-bold mb-4 backdrop-blur-md">
+                    🗞️ Vocea elevilor
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">Ziarul Buzz</h1>
+                <p class="text-lg md:text-xl text-amber-50 max-w-2xl mx-auto font-medium">
+                    Știri, recenzii și opinii scrise de elevi pentru elevi. Explorează arhiva noastră.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#ziar-container" class="bg-white text-orange-600 px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:bg-orange-50 hover:scale-[1.05] transition-all duration-300 active:scale-95">
+                    Vezi Ziarele
+                </a>
+                </div>
             </div>
         </div>
     </header>
 
     <section class="py-12 max-w-6xl mx-auto px-4 flex-grow">
-        <h2 class="text-3xl font-bold mb-8 text-slate-800 border-b border-indigo-200 pb-4">📰 Arhiva de ziare:</h2>
+        <h2 class="text-3xl font-bold mb-2 text-amber-800 flex items-center">
+            <span class="mr-3">📰</span> Arhiva de ziare
+        </h2>
+        <div class="h-1 w-full max-w-lg bg-gradient-to-r from-amber-500 to-transparent rounded-full mb-10 opacity-70"></div>
         <div id="ziar-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         <p id="loading-msg" class="text-center text-slate-400 italic">Se încarcă arhiva...</p>
     </section>
@@ -91,5 +111,28 @@
 
     <script src="../app.js"></script>
     <script src="../ziare.js"></script>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="fixed bottom-6 left-6 z-50 bg-white/30 backdrop-blur-md border border-white/40 shadow-lg text-slate-600 hover:text-indigo-600 hover:bg-white/80 px-4 py-2 rounded-full text-sm font-bold transition-all duration-500 flex items-center gap-1 hover:-translate-y-1 hover:shadow-xl opacity-0 pointer-events-none translate-y-10">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg> sus
+    </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTop = document.getElementById('back-to-top');
+            if (backToTop) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTop.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
+                    } else {
+                        backToTop.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
+                    }
+                });
+                backToTop.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
