@@ -56,13 +56,6 @@ const livada = [
         descriere: "Clasicul trandafir care nu are nevoie de nicio prezentare! Miroase superb și e plin de viață vara."
     },
     {
-        titlu: "Hydrangea macrophylla",
-        categorie: "spatii-verzi",
-        link: "hydrangea.html",
-        imagine: "../imagini/hydrangea.jpeg",
-        descriere: "Această hortensie își schimbă culoarea în funcție de pământ. Ne simțim ca la ora de chimie când o studiem!"
-    },
-    {
         titlu: "Hibiscus",
         categorie: "spatii-verzi",
         link: "hibiscus.html",
@@ -154,14 +147,6 @@ const livada = [
         descriere: "Colțul nostru plin de arome unde descoperim mereu noi ierburi. Miroase de parcă ai fi într-o pizzerie!"
     },
     {
-        titlu: "Grădina Medicinală",
-        categorie: "gradini-tematice",
-        link: "gradina-medicinala.html",
-        imagine: "../imagini/gradina-medicinala.jpeg",
-        descriere: "O adevărată farmacie verde unde învățăm cum foloseau bunicii noștri plantele pentru a se vindeca."
-    }
-,
-    {
         titlu: "Arbore de Mătase",
         categorie: "spatii-verzi",
         link: "arbore-de-matase.html",
@@ -244,6 +229,13 @@ const livada = [
         link: "visin.html",
         imagine: "../imagini/visin.jpeg",
         descriere: "Cei mai acrișori vișini fac cele mai bune prăjituri! Așteptăm nerăbdători sezonul lor în fiecare an."
+    },
+    {
+        titlu: "Aleea Senzorială",
+        categorie: "gradini-tematice",
+        link: "aleea-senzoriala.html",
+        imagine: "../imagini/aleea-senzoriala.jpeg",
+        descriere: "In mijlocul grădinii literare,  colorată și veselă, aleea senzorială te invită să-ți testezi simțul tactil."
     },
     {
         titlu: "Zmeur",
