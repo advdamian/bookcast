@@ -1,12 +1,12 @@
 const ziare = [
     {
-        numar: "Ediția 11 - Ian 2026",
+        numar: "Ediția 11 - Mar 2026",
         linkCanva: "editia11.html",
         coperta: "/imagini/coperta11.jpeg",
         descriere: "Acest număr este unul dedicat femeilor și luptei lor pentru echitate, pentru obținerea drepturilor fundamentale, din 1500 până în prezent. Găsiți aici un articol despre spectacolul “Lumini si umbre”, dar și recenzii de carte și cronici de film. Iar noutatea acestui articol constă în rubrica de scriere creativă - prima poveste este în limba engleză. Lectură plăcută!♥️"
     },
     {
-        numar: "Ediția 10 - Ian 2026",
+        numar: "Ediția 10 - Feb 2026",
         linkCanva: "editia10.html",
         coperta: "/imagini/coperta10.jpeg",
         descriere: "În acest număr, continuăm dialogul captivant cu actorul Mircea Mogoșeanu, într-o ediție specială ce explorează artele în deplina lor complexitate. Vă invităm la o incursiune fascinantă prin sculptură, teatru și cinematografie, culminând cu universul emoționant al muzicii clasice. De la rigoarea formelor artistice, până la tragismul boem al operelor lui Giacomo Puccini, vă propunem o călătorie culturală completă, menită să inspire și să cultive pasiunea pentru frumos."
