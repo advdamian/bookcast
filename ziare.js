@@ -1,5 +1,17 @@
 const ziare = [
     {
+        numar: "Ediția 13 - Mai 2026",
+        linkCanva: "editia13.html",
+        coperta: "/imagini/coperta13.jpeg",
+        descriere: "Orice informație intens promovată este neapărat reală? Ce sunt conspirațiile? Ne uităm cu mai mare atenție la o serie de teorii ale conspirației într-un interviu foarte interesant cu fizicianul Cristian Presură.  Totodată, numărul 13 propune o imersiune mai profundă în activitatea noastră de cercetători și aduce în prim plan poveștile culese de la oamenii din comunitate, dar și concluziile noastre în urma cercetării. Niciun număr fără teatru - regăsiți aici și câteva povești despre piesa Peer Gynt pe care am avut ocazia să o vedem la Sala Palatului, dar și propuneri de lectură și alte articole interesante."
+    },
+    {
+        numar: "Ediția 12 - Apr 2026",
+        linkCanva: "editia12.html",
+        coperta: "/imagini/coperta12.jpeg",
+        descriere: "În acest număr inaugurăm activitatea redacției de cercetători cu două studii făcute în comunitate pe tema spațiillor verzi din curtea școlii de-a lungul timpului și a speciilor adaptate zonei, dar nu abandonăm nici interesul nostru, deja cunoscut pentru teatru și literatură, așa că găsiți aici cronici la spectacolul Hamlet de la Teatrul Național „Marin Sorescu” din Craiova, recenzii de carte și articole despre obiective istorice vizitate de noi. Lectură plăcută!❤️"
+    },
+    {
         numar: "Ediția 11 - Mar 2026",
         linkCanva: "editia11.html",
         coperta: "/imagini/coperta11.jpeg",
