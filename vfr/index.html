@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vâlcea Forest Run - Bookcast</title>
+
+    <meta name="description" content="Află mai multe despre Vâlcea Forest Run și susține comunitatea prin donații.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../imagini/iconita.png">
+
+    <link rel="stylesheet" href="../global.css">
+</head>
+
+<body class="liquid-bg-static text-slate-800 flex flex-col min-h-screen overflow-x-hidden">
+
+    <nav class="bg-white/80 backdrop-blur-md border-b border-white/50 sticky top-0 z-50 transition-colors duration-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <a href="../" class="flex items-center space-x-2">
+                    <img loading="lazy" src="../imagini/logo.png" alt="Logo Bookcast"
+                        class="h-14 w-auto transform hover:scale-105 transition-transform duration-200">
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="../"
+                        class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Acasă</a>
+                    <a href="../buzz/"
+                        class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul
+                        Buzz</a>
+                    <a href="../podcast/"
+                        class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
+                    <a href="../livada/"
+                        class="text-slate-600 hover:text-green-600 font-medium transition-colors duration-200">Livada
+                        Noastră</a>
+                    <a href="../contact/"
+                        class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
+                    <a href="./"
+                        class="text-emerald-600 font-bold bg-emerald-50 px-3 py-1 rounded-lg border border-green-200">VFR</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t p-4 space-y-2">
+            <a href="../" class="block py-2 hover:text-indigo-600">Acasă</a>
+            <a href="../buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
+            <a href="../podcast/" class="block py-2 hover:text-indigo-600">Podcast</a>
+            <a href="../livada/" class="block py-2 hover:text-green-600">Livada Noastră</a>
+            <a href="../contact/" class="block py-2 hover:text-indigo-600">Contact</a>
+            <a href="./" class="block py-2 text-emerald-600 font-bold">Vâlcea Forest Run</a>
+        </div>
+    </nav>
+
+    <header class="relative py-12 md:py-20 px-4">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl -mr-20 -mt-20 -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-green-500/10 rounded-full blur-3xl -ml-20 -mb-20 -z-10"></div>
+
+        <div
+            class="max-w-5xl mx-auto glass-card rounded-[2.5rem] p-8 md:p-14 text-center relative overflow-hidden transition-all duration-300 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.15)] group border border-emerald-100/50">
+            <div class="relative z-10">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-800 text-sm font-bold mb-6 shadow-sm">
+                    🌲 Eveniment Sportiv și Caritabil
+                </span>
+
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-slate-900 drop-shadow-sm tracking-tight">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-600">Vâlcea
+                        Forest Run</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-slate-700 mb-10 max-w-3xl mx-auto font-medium leading-relaxed">
+                    Alătură-te nouă într-o cursă caritabilă de neuitat prin natură. Fiecare pas pe care îl faci ajută la
+                    sprijinirea cauzelor locale și aduce zâmbete în comunitatea noastră.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-5">
+                    <a href="https://fcvl.ro/vfr" target="_blank" rel="noopener noreferrer"
+                        class="bg-white text-emerald-600 px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:bg-emerald-50 hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-emerald-100">
+                        📖 Află mai multe
+                    </a>
+                    <a href="https://fcvl.ro/proiecte/bookcast-buzz" target="_blank" rel="noopener noreferrer"
+                        class="bg-gradient-to-r from-emerald-500 to-green-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-emerald-400/50">
+                        💖 Donează Acum
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="detalii" class="py-12 max-w-5xl mx-auto px-4 flex-grow">
+        <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden border border-white/50 shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Despre Vâlcea Forest Run</h2>
+            <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
+                <p>
+                    Valcea Forest Run este o oportunitate de networking și fundraising pentru proiecte locale. Cu
+                    sprijinul lor și prin intermediul Fundației Comunitare Vâlcea, am reușit să ne facem cunoscută
+                    povestea și să atragem oameni care să vină către noi cu noi oportunități de interviuri, conexiuni și
+                    mentorat în activitatea de strangere de fonduri.
+                </p>
+                <p>
+                    Este o ocazie excelentă de a face mișcare în natură, de a petrece timp în aer liber alături de
+                    prieteni, familie, colegi sau chiar cu sufletul pereche, și de a contribui la cauze nobile din
+                    comunitatea noastră. Fiecare pas pe care îl faci contează și ajută la aducerea unui zâmbet pe chipul
+                    cuiva. Fie că ești un alergător experimentat sau abia începi, Vâlcea Forest Run are o cursă
+                    potrivită pentru fiecare nivel de pregătire. Profită de ocazie să-ți testezi limitele, să te bucuri
+                    de peisajele spectaculoase din jurul Râmnicului și, cel mai important, să faci o diferență reală.
+                </p>
+                <div class="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl mt-8">
+                    <h3 class="text-xl font-bold text-emerald-800 mb-2">De ce să te implici?</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-emerald-700">
+                        <li>Faci mișcare în aer liber și îți îmbunătățești sănătatea.</li>
+                        <li>Contribui direct la realizarea unor proiecte esențiale pentru comunitatea noastră.</li>
+                        <li>Faci parte dintr-un grup minunat de oameni uniți de aceleași valori.</li>
+                        <li>Susții educația, mediul și tinerii din Vâlcea.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12 mb-8">
+            <h3 class="text-2xl font-bold text-slate-800 mb-6">Fii parte din schimbare!</h3>
+            <a href="https://fcvl.ro/proiecte/bookcast-buzz" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-green-600 text-white px-10 py-5 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95 text-lg">
+                Donează pe pagina oficială &rarr;
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-gray-300 py-10 text-center mt-auto border-t border-gray-800">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://www.facebook.com/profile.php?id=100082884984904" target="_blank"
+                class="text-gray-400 hover:text-blue-500 transition-transform duration-200 transform hover:scale-110">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.641c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z" />
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/@bookcast1" target="_blank"
+                class="text-gray-400 hover:text-red-600 transition-transform duration-200 transform hover:scale-110">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+            </a>
+        </div>
+
+        <div
+            class="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+            <p class="opacity-60 text-sm">© 2026 Bookcast.</p>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+
+</html>

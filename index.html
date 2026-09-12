@@ -1,395 +1,520 @@
 <!DOCTYPE html>
 <html lang="ro" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookcast - Acasă</title>
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bookcast.ro/">
-    <meta property="og:title" content="Bookcast - Dialoguri Inspiraționale și Noutăți.">
-    <meta property="og:description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opiniile elevilor.">
-    <meta property="og:image" content="https://bookcast.ro/iconita.jpg">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://bookcast.ro/">
-    <meta property="twitter:title" content="Bookcast - Dialoguri Inspiraționale și Noutăți.">
-    <meta property="twitter:description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast.">
-    <meta property="twitter:image" content="https://bookcast.ro/iconita.jpg">
-    <meta name="description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opiniile elevilor într-un format digital modern.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="imagini/iconita.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookcast - Acasă</title>
 
-    
-    <style>
-        @font-face {
-            font-display: block;
-            font-family: Roboto;
-            src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
-        }
-        @font-face {
-            font-display: fallback;
-            font-family: Roboto;
-            font-weight: 600;
-            src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
-        }
-        @font-face {
-            font-display: fallback;
-            font-family: Roboto;
-            font-weight: 700;
-            src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
-        }
-        #sib-container input:-ms-input-placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
-        #sib-container input::placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
-        #sib-container textarea::placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
-        #sib-container a { text-decoration: underline; color: #2BB2FC; }
-        .sib-form { padding: 0 !important; background-color: transparent !important; }
-        #sib-container { border: none !important; max-width: 100% !important; background-color: transparent !important; }
-    </style>
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bookcast.ro/">
+  <meta property="og:title" content="Bookcast - Dialoguri Inspiraționale și Noutăți.">
+  <meta property="og:description"
+    content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opiniile elevilor.">
+  <meta property="og:image" content="https://bookcast.ro/iconita.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://bookcast.ro/">
+  <meta property="twitter:title" content="Bookcast - Dialoguri Inspiraționale și Noutăți.">
+  <meta property="twitter:description" content="Citește Ziarul Buzz și ascultă Podcastul Bookcast.">
+  <meta property="twitter:image" content="https://bookcast.ro/iconita.jpg">
+  <meta name="description"
+    content="Citește Ziarul Buzz și ascultă Podcastul Bookcast. Noutăți, interviuri și opiniile elevilor într-un format digital modern.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="imagini/iconita.png">
 
 
-    <link rel="stylesheet" href="global.css">
+  <style>
+    @font-face {
+      font-display: block;
+      font-family: Roboto;
+      src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+    }
 
-    </head>
+    @font-face {
+      font-display: fallback;
+      font-family: Roboto;
+      font-weight: 600;
+      src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+    }
+
+    @font-face {
+      font-display: fallback;
+      font-family: Roboto;
+      font-weight: 700;
+      src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+    }
+
+    #sib-container input:-ms-input-placeholder {
+      text-align: left;
+      font-family: Helvetica, sans-serif;
+      color: #c0ccda;
+    }
+
+    #sib-container input::placeholder {
+      text-align: left;
+      font-family: Helvetica, sans-serif;
+      color: #c0ccda;
+    }
+
+    #sib-container textarea::placeholder {
+      text-align: left;
+      font-family: Helvetica, sans-serif;
+      color: #c0ccda;
+    }
+
+    #sib-container a {
+      text-decoration: underline;
+      color: #2BB2FC;
+    }
+
+    .sib-form {
+      padding: 0 !important;
+      background-color: transparent !important;
+    }
+
+    #sib-container {
+      border: none !important;
+      max-width: 100% !important;
+      background-color: transparent !important;
+    }
+  </style>
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+
+  <link rel="stylesheet" href="global.css">
+
+</head>
+
 <body class="liquid-bg-static home-page text-slate-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white/80 backdrop-blur-md border-b border-white/50 sticky top-0 z-50 transition-colors duration-200">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-3">
-                <a href="/" class="flex items-center space-x-2">
-                    <img loading="lazy" src="imagini/logo.png" alt="Logo Bookcast" class="h-14 w-auto transform hover:scale-105 transition-transform duration-200"> 
-                </a>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="/" class="text-indigo-600 font-bold bg-white/60 px-3 py-1 rounded-lg border border-indigo-100">Acasă</a>
-                    <a href="buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul Buzz</a>
-                    <a href="podcast/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
-                    <a href="livada/" class="text-slate-600 hover:text-green-600 font-medium transition-colors duration-200">Livada Noastră</a>
-                    <a href="contact/" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
+  <nav class="bg-white/80 backdrop-blur-md border-b border-white/50 sticky top-0 z-50 transition-colors duration-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-3">
+        <a href="/" class="flex items-center space-x-2">
+          <img loading="lazy" src="imagini/logo.png" alt="Logo Bookcast"
+            class="h-14 w-auto transform hover:scale-105 transition-transform duration-200">
+        </a>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="/"
+            class="text-indigo-600 font-bold bg-white/60 px-3 py-1 rounded-lg border border-indigo-100">Acasă</a>
+          <a href="buzz/" class="text-slate-600 hover:text-amber-600 font-medium transition-colors duration-200">Ziarul
+            Buzz</a>
+          <a href="podcast/"
+            class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Podcast</a>
+          <a href="livada/"
+            class="text-slate-600 hover:text-green-600 font-medium transition-colors duration-200">Livada Noastră</a>
+          <a href="contact/"
+            class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
+            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t p-4 space-y-2">
+      <a href="/" class="block py-2 text-indigo-600 font-bold">Acasă</a>
+      <a href="buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
+      <a href="podcast/" class="block py-2 hover:text-indigo-600">Podcast</a>
+      <a href="livada/" class="block py-2 hover:text-green-600">Livada Noastră</a>
+      <a href="contact/" class="block py-2 hover:text-indigo-600">Contact</a>
+    </div>
+  </nav>
+
+  <header class="relative py-10 md:py-16 px-4">
+    <div
+      class="max-w-5xl mx-auto bg-gradient-to-br from-indigo-50/90 to-white/60 backdrop-blur-2xl border border-white/60 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] rounded-[2.5rem] p-8 md:p-14 text-center relative overflow-hidden transition-all duration-300 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.15)] hover:-translate-y-1 group">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/60 to-white/10 pointer-events-none">
+      </div>
+      <div class="relative z-10">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-slate-900 drop-shadow-sm tracking-tight">
+          Bun venit la <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 drop-shadow-sm">Bookcast</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-700 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
+          Un proiect multimedia realizat de elevi. De la dialoguri inspiraționale și discuții captivante, la știri și
+          recenzii de carte. Descoperă poveștile noastre.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-5">
+          <a href="buzz/"
+            class="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-orange-400/50">
+            📖 Citește Ziarul
+          </a>
+          <a href="podcast/"
+            class="bg-white text-indigo-600 px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:bg-indigo-50 hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-white/50">
+            🎙️ Ascultă Podcast
+          </a>
+        </div>
+        <!-- Buton Temporar VFR -->
+        <div class="mt-6 flex justify-center">
+          <a href="vfr/"
+            class="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-green-400/50">
+            🌲 Susține-ne la Vâlcea Forest Run
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-6 max-w-6xl mx-auto px-4 flex-grow">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-3xl font-bold text-slate-800">
+        🔥 Ultimele Episoade
+      </h2>
+      <a href="podcast/"
+        class="text-indigo-600 hover:text-pink-600 font-medium hidden md:block transition-colors duration-200">Toată
+        colecția &rarr;</a>
+    </div>
+
+    <div id="podcast-container" data-limit="3" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+
+    <div class="text-center mt-12 md:hidden">
+      <a href="podcast/" class="text-indigo-600 font-bold">Vezi toate episoadele &rarr;</a>
+    </div>
+
+    <div class="text-center mt-20 glass-card p-10 rounded-3xl relative overflow-hidden">
+      <div class="absolute inset-0 bg-white/20 backdrop-blur-md"></div>
+      <div class="relative z-10">
+        <h3 class="text-2xl font-bold text-slate-800 mb-3">Nu rata niciun episod!</h3>
+        <p class="text-slate-600 mb-8 font-medium">Abonează-te la canalul nostru oficial.</p>
+        <a href="https://www.youtube.com/@bookcast1" target="_blank"
+          class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-pink-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+          Subscribe pe YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div
+    class="h-px w-full max-w-4xl mx-auto bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-700 to-transparent my-4">
+  </div>
+
+  <section id="despre-noi" class="py-6 max-w-5xl mx-auto px-4">
+    <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden border border-white/50 shadow-lg">
+      <div
+        class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl -ml-10 -mb-10 pointer-events-none">
+      </div>
+      <div class="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div class="md:w-1/3 flex justify-center">
+          <div
+            class="w-32 h-32 md:w-48 md:h-48 bg-gradient-to-br from-indigo-50 to-purple-100 rounded-full flex items-center justify-center shadow-inner border-4 border-white transform hover:rotate-6 transition-transform duration-300">
+            <span class="text-6xl md:text-8xl">👋</span>
+          </div>
+        </div>
+        <div class="md:w-2/3 text-center md:text-left">
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Despre Noi</h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-4">
+            Suntem echipa <strong>Bookcast</strong>, un grup de elevi pasionați de povești din Școala Gimnazială
+            Mologești! Am creat acest spațiu virtual din dorința de a aduce cărțile, dialogul și cunoașterea mai aproape
+            de colegii noștri.
+          </p>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            Ne găsești scriind cu entuziasm articole pentru <span class="font-bold text-amber-600">Ziarul Buzz</span>,
+            punând întrebări incomode la <span class="font-bold text-indigo-600">Podcast</span> sau explorând natura din
+            curtea școlii în proiectul <span class="font-bold text-green-600">Livada Noastră</span>. Lectură plăcută!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative py-10 px-4 overflow-hidden border-t border-slate-200/50">
+
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 -z-20"></div>
+
+    <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl -mr-20 -mt-20 -z-10"></div>
+    <div class="absolute bottom-0 left-0 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl -ml-20 -mb-20 -z-10"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <span
+        class="inline-block py-1 px-3 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-sm font-bold mb-4">
+        📩 Rămâi conectat
+      </span>
+
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">
+        Fii mereu la curent!
+      </h2>
+
+      <p class="text-slate-300 mb-10 text-lg max-w-2xl mx-auto">
+        Alătură-te comunității Bookcast. Primești noutăți despre Ziarul Buzz și Podcast direct pe email.
+        Promitem să trimitem doar lucruri interesante.
+      </p>
+
+      <div class="bg-white rounded-2xl max-w-lg mx-auto shadow-2xl overflow-hidden p-2">
+
+        <div class="sib-form" style="text-align: center; background-color: #EFF2F7;">
+          <div id="sib-form-container" class="sib-form-container">
+            <div id="error-message" class="sib-form-message-panel"
+              style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+              <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                  <path
+                    d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                </svg>
+                <span class="sib-form-message-panel__inner-text">
+                  Abonarea a eșuat. Încearcă din nou.
+                </span>
+              </div>
+            </div>
+            <div></div>
+            <div id="success-message" class="sib-form-message-panel"
+              style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+              <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                  <path
+                    d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                </svg>
+                <span class="sib-form-message-panel__inner-text">
+                  Te-ai abonat cu succes! 💜
+                </span>
+              </div>
+            </div>
+            <div></div>
+            <div id="sib-container" class="sib-container--large sib-container--vertical"
+              style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
+              <form id="sib-form" method="POST"
+                action="https://5f4ccbd9.sibforms.com/serve/MUIFAHvXqqGOuzXcrk9TEdaHY6ZOnoiy5vksOaz9QljzB7stCQbsy9goczLgsw1RbItebqcTwNJo6CgtbO_msizyHpmn7kOK1jGN-4UkOvy2t-UAZUK_C-Z7HTzYuWniElHvLp1k_W8_GeOOKCiLmCCtfH65LNAXv5X3UTNqvsIq38QkEO9kOt9DkJVvF8z1XeS_nqwLgqy-RsPKSw=="
+                data-type="subscription">
+                <input type="hidden" name="_next" value="https://bookcast.ro/thankyou.html">
+                <div style="padding: 8px 0;">
+                  <div class="sib-input sib-form-block">
+                    <div class="form__entry entry_block">
+                      <div class="form__label-row ">
+                        <label class="entry__label"
+                          style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;"
+                          for="EMAIL" data-required="*">Introdu adresa de e-mail</label>
+                        <div class="entry__field">
+                          <input class="input " type="email" id="EMAIL" name="EMAIL" autocomplete="off"
+                            placeholder="exemplu@domeniu.com" data-required="true" required />
+                        </div>
+                      </div>
+                      <label class="entry__error entry__error--primary"
+                        style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
-                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                <div style="padding: 8px 0;">
+                  <div class="sib-optin sib-form-block" data-required="true">
+                    <div class="form__entry entry_mcq">
+                      <div class="form__label-row ">
+                        <div class="entry__choice">
+                          <label>
+                            <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN"
+                              required />
+                            <span class="checkbox checkbox_tick_positive" style="margin-left:4px"></span><span
+                              style="font-size:14px; text-align:left; font-family:Futura, sans-serif; color:#3C4858; background-color:transparent;">Sunt
+                              de acord să primesc noutățile și accept termenii de confidențialitate Brevo.<span
+                                data-required="*" style="display: inline;"
+                                class="entry__label entry__label_optin"></span></span> </label>
+                        </div>
+                      </div>
+                      <label class="entry__error entry__error--primary"
+                        style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                      </label>
+                      <label class="entry__specification"
+                        style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4; text-align:left">
+                        Folosim adresa ta de email exclusiv pentru a-ți trimite newsletter-ul și noutăți despre
+                        proiectul nostru. Te poți dezabona oricând folosind link-ul inclus în fiecare email.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding: 8px 0;">
+                  <div class="sib-form-block sib-divider-form-block">
+                    <div style="border: 0; border-bottom: 1px solid #E5EDF6"></div>
+                  </div>
+                </div>
+                <div style="padding: 8px 0;">
+                  <div class="sib-input sib-form-block">
+                    <div class="form__entry entry_block">
+                      <div class="form__label-row ">
+                        <label class="entry__label"
+                          style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;"
+                          for="FIRSTNAME">Introdu numele tău (opțional)</label>
+                        <div class="entry__field">
+                          <input class="input " maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME"
+                            autocomplete="off" placeholder="Ion" />
+                        </div>
+                      </div>
+                      <label class="entry__error entry__error--primary"
+                        style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                      </label>
+                      <label class="entry__specification"
+                        style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4; text-align:left">
+                        Folosim numele tău doar pentru e-mailuri personalizate.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding: 8px 0;">
+                  <div class="sib-form__declaration" style="direction:ltr">
+                    <div class="declaration-block-icon">
+                      <svg class="icon__SVG" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <symbol id="svgIcon-sphere" viewBox="0 0 63 63">
+                            <path class="path1"
+                              d="M31.54 0l1.05 3.06 3.385-.01-2.735 1.897 1.05 3.042-2.748-1.886-2.738 1.886 1.044-3.05-2.745-1.897h3.393zm13.97 3.019L46.555 6.4l3.384.01-2.743 2.101 1.048 3.387-2.752-2.1-2.752 2.1 1.054-3.382-2.745-2.105h3.385zm9.998 10.056l1.039 3.382h3.38l-2.751 2.1 1.05 3.382-2.744-2.091-2.743 2.091 1.054-3.381-2.754-2.1h3.385zM58.58 27.1l1.04 3.372h3.379l-2.752 2.096 1.05 3.387-2.744-2.091-2.75 2.092 1.054-3.387-2.747-2.097h3.376zm-3.076 14.02l1.044 3.364h3.385l-2.743 2.09 1.05 3.392-2.744-2.097-2.743 2.097 1.052-3.377-2.752-2.117 3.385-.01zm-9.985 9.91l1.045 3.364h3.393l-2.752 2.09 1.05 3.393-2.745-2.097-2.743 2.097 1.05-3.383-2.751-2.1 3.384-.01zM31.45 55.01l1.044 3.043 3.393-.008-2.752 1.9L34.19 63l-2.744-1.895-2.748 1.891 1.054-3.05-2.743-1.9h3.384zm-13.934-3.98l1.036 3.364h3.402l-2.752 2.09 1.053 3.393-2.747-2.097-2.752 2.097 1.053-3.382-2.743-2.1 3.384-.01zm-9.981-9.91l1.045 3.364h3.398l-2.748 2.09 1.05 3.392-2.753-2.1-2.752 2.096 1.053-3.382-2.743-2.102 3.384-.009zM4.466 27.1l1.038 3.372H8.88l-2.752 2.097 1.053 3.387-2.743-2.09-2.748 2.09 1.053-3.387L0 30.472h3.385zm3.069-14.025l1.045 3.382h3.395L9.23 18.56l1.05 3.381-2.752-2.09-2.752 2.09 1.053-3.381-2.744-2.1h3.384zm9.99-10.056L18.57 6.4l3.393.01-2.743 2.1 1.05 3.373-2.754-2.092-2.751 2.092 1.053-3.382-2.744-2.1h3.384zm24.938 19.394l-10-4.22a2.48 2.48 0 00-1.921 0l-10 4.22A2.529 2.529 0 0019 24.75c0 10.47 5.964 17.705 11.537 20.057a2.48 2.48 0 001.921 0C36.921 42.924 44 36.421 44 24.75a2.532 2.532 0 00-1.537-2.336zm-2.46 6.023l-9.583 9.705a.83.83 0 01-1.177 0l-5.416-5.485a.855.855 0 010-1.192l1.177-1.192a.83.83 0 011.177 0l3.65 3.697 7.819-7.916a.83.83 0 011.177 0l1.177 1.191a.843.843 0 010 1.192z"
+                              fill="#0092FF"></path>
+                          </symbol>
+                        </defs>
+                      </svg>
+                      <svg class="svgIcon-sphere" style="width:58.5px; height:58.5px;">
+                        <use xlink:href="#svgIcon-sphere"></use>
+                      </svg>
+                    </div>
+                    <div
+                      style="font-size:13px; text-align:left; font-family:Futura, sans-serif; color:#687484; background-color:transparent;">
+                      <p>Folosim Brevo ca platformă de marketing. Prin trimiterea acestui formular, ești de acord ca
+                        datele personale furnizate să fie transferate către Brevo pentru prelucrare, în conformitate cu
+                        <a href="https://www.brevo.com/en/legal/privacypolicy/" target="_blank">Politica de
+                          confidențialitate Brevo</a>.</p>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding: 8px 0;">
+                  <div class="sib-form-block" style="text-align: left">
+                    <button class="sib-form-block__button sib-form-block__button-with-loader"
+                      style="font-size:16px; text-align:left; font-weight:700; font-family:Futura, sans-serif; color:#FFFFFF; background-color:#3d06cf; border-radius:20px; border-width:0px;"
+                      form="sib-form" type="submit">
+                      <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                        viewBox="0 0 512 512">
+                        <path
+                          d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                      </svg>
+                      Abonează-te
                     </button>
-                </div>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl border-t p-4 space-y-2">
-            <a href="/" class="block py-2 text-indigo-600 font-bold">Acasă</a>
-            <a href="buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
-            <a href="podcast/" class="block py-2 hover:text-indigo-600">Podcast</a>
-            <a href="livada/" class="block py-2 hover:text-green-600">Livada Noastră</a>
-            <a href="contact/" class="block py-2 hover:text-indigo-600">Contact</a>
-        </div>
-    </nav>
-
-    <header class="relative py-10 md:py-16 px-4">
-        <div class="max-w-5xl mx-auto bg-gradient-to-br from-indigo-50/90 to-white/60 backdrop-blur-2xl border border-white/60 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] rounded-[2.5rem] p-8 md:p-14 text-center relative overflow-hidden transition-all duration-300 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.15)] hover:-translate-y-1 group">
-            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/60 to-white/10 pointer-events-none"></div>
-            <div class="relative z-10">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-slate-900 drop-shadow-sm tracking-tight">
-                    Bun venit la <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 drop-shadow-sm">Bookcast</span>
-                </h1>
-                <p class="text-xl md:text-2xl text-slate-700 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
-                    Un proiect multimedia realizat de elevi. De la dialoguri inspiraționale și discuții captivante, la știri și recenzii de carte. Descoperă poveștile noastre.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-5">
-                    <a href="buzz/" class="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-orange-400/50">
-                        📖 Citește Ziarul
-                    </a>
-                    <a href="podcast/" class="bg-white text-indigo-600 px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:bg-indigo-50 hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-white/50">
-                        🎙️ Ascultă Podcast
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="py-6 max-w-6xl mx-auto px-4 flex-grow">
-        <div class="flex items-center justify-between mb-8">
-            <h2 class="text-3xl font-bold text-slate-800">
-                🔥 Ultimele Episoade
-            </h2>
-            <a href="podcast/" class="text-indigo-600 hover:text-pink-600 font-medium hidden md:block transition-colors duration-200">Toată colecția &rarr;</a>
-        </div>
-        
-        <div id="podcast-container" data-limit="3" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
-        
-        <div class="text-center mt-12 md:hidden">
-             <a href="podcast/" class="text-indigo-600 font-bold">Vezi toate episoadele &rarr;</a>
-        </div>
-
-        <div class="text-center mt-20 glass-card p-10 rounded-3xl relative overflow-hidden">
-            <div class="absolute inset-0 bg-white/20 backdrop-blur-md"></div>
-            <div class="relative z-10">
-                <h3 class="text-2xl font-bold text-slate-800 mb-3">Nu rata niciun episod!</h3>
-                <p class="text-slate-600 mb-8 font-medium">Abonează-te la canalul nostru oficial.</p>
-                <a href="https://www.youtube.com/@bookcast1" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-pink-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                    Subscribe pe YouTube
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <div class="h-px w-full max-w-4xl mx-auto bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-700 to-transparent my-4"></div>
-
-    <section id="despre-noi" class="py-6 max-w-5xl mx-auto px-4">
-        <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden border border-white/50 shadow-lg">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"></div>
-            <div class="absolute bottom-0 left-0 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl -ml-10 -mb-10 pointer-events-none"></div>
-            <div class="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                <div class="md:w-1/3 flex justify-center">
-                    <div class="w-32 h-32 md:w-48 md:h-48 bg-gradient-to-br from-indigo-50 to-purple-100 rounded-full flex items-center justify-center shadow-inner border-4 border-white transform hover:rotate-6 transition-transform duration-300">
-                        <span class="text-6xl md:text-8xl">👋</span>
-                    </div>
-                </div>
-                <div class="md:w-2/3 text-center md:text-left">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Despre Noi</h2>
-                    <p class="text-slate-600 text-lg leading-relaxed mb-4">
-                        Suntem echipa <strong>Bookcast</strong>, un grup de elevi pasionați de povești din Școala Gimnazială Mologești! Am creat acest spațiu virtual din dorința de a aduce cărțile, dialogul și cunoașterea mai aproape de colegii noștri.
-                    </p>
-                    <p class="text-slate-600 text-lg leading-relaxed">
-                        Ne găsești scriind cu entuziasm articole pentru <span class="font-bold text-amber-600">Ziarul Buzz</span>, punând întrebări incomode la <span class="font-bold text-indigo-600">Podcast</span> sau explorând natura din curtea școlii în proiectul <span class="font-bold text-green-600">Livada Noastră</span>. Lectură plăcută!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="relative py-10 px-4 overflow-hidden border-t border-slate-200/50">
-        
-        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 -z-20"></div>
-        
-        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl -mr-20 -mt-20 -z-10"></div>
-        <div class="absolute bottom-0 left-0 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl -ml-20 -mb-20 -z-10"></div>
-
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <span class="inline-block py-1 px-3 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-sm font-bold mb-4">
-                📩 Rămâi conectat
-            </span>
-            
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">
-                Fii mereu la curent!
-            </h2>
-            
-            <p class="text-slate-300 mb-10 text-lg max-w-2xl mx-auto">
-                Alătură-te comunității Bookcast. Primești noutăți despre Ziarul Buzz și Podcast direct pe email. 
-                Promitem să trimitem doar lucruri interesante.
-            </p>
-
-            <div class="bg-white rounded-2xl max-w-lg mx-auto shadow-2xl overflow-hidden p-2">
-                
-                <div class="sib-form" style="text-align: center; background-color: #EFF2F7;">
-                    <div id="sib-form-container" class="sib-form-container">
-                      <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
-                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                          <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                            <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-                          </svg>
-                          <span class="sib-form-message-panel__inner-text">
-                            Abonarea a eșuat. Încearcă din nou.
-                          </span>
-                        </div>
-                      </div>
-                      <div></div>
-                      <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
-                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                          <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                            <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-                          </svg>
-                          <span class="sib-form-message-panel__inner-text">
-                            Te-ai abonat cu succes! 💜
-                          </span>
-                        </div>
-                      </div>
-                      <div></div>
-                      <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr">
-                        <form id="sib-form" method="POST" action="https://5f4ccbd9.sibforms.com/serve/MUIFAHvXqqGOuzXcrk9TEdaHY6ZOnoiy5vksOaz9QljzB7stCQbsy9goczLgsw1RbItebqcTwNJo6CgtbO_msizyHpmn7kOK1jGN-4UkOvy2t-UAZUK_C-Z7HTzYuWniElHvLp1k_W8_GeOOKCiLmCCtfH65LNAXv5X3UTNqvsIq38QkEO9kOt9DkJVvF8z1XeS_nqwLgqy-RsPKSw==" data-type="subscription">
-                          <input type="hidden" name="_next" value="https://bookcast.ro/thankyou.html">
-                          <div style="padding: 8px 0;">
-                            <div class="sib-input sib-form-block">
-                              <div class="form__entry entry_block">
-                                <div class="form__label-row ">
-                                  <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Introdu adresa de e-mail</label>
-                                  <div class="entry__field">
-                                    <input class="input " type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="exemplu@domeniu.com" data-required="true" required />
-                                  </div>
-                                </div>
-                                <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div style="padding: 8px 0;">
-                            <div class="sib-optin sib-form-block" data-required="true">
-                              <div class="form__entry entry_mcq">
-                                <div class="form__label-row ">
-                                  <div class="entry__choice">
-                                    <label>
-                                      <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
-                                      <span class="checkbox checkbox_tick_positive" style="margin-left:4px"></span><span style="font-size:14px; text-align:left; font-family:Futura, sans-serif; color:#3C4858; background-color:transparent;">Sunt de acord să primesc noutățile și accept termenii de confidențialitate Brevo.<span data-required="*" style="display: inline;" class="entry__label entry__label_optin"></span></span> </label>
-                                  </div>
-                                </div>
-                                <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                                </label>
-                                <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4; text-align:left">
-                                  Folosim adresa ta de email exclusiv pentru a-ți trimite newsletter-ul și noutăți despre proiectul nostru. Te poți dezabona oricând folosind link-ul inclus în fiecare email.
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div style="padding: 8px 0;">
-                            <div class="sib-form-block sib-divider-form-block">
-                              <div style="border: 0; border-bottom: 1px solid #E5EDF6"></div>
-                            </div>
-                          </div>
-                          <div style="padding: 8px 0;">
-                            <div class="sib-input sib-form-block">
-                              <div class="form__entry entry_block">
-                                <div class="form__label-row ">
-                                  <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="FIRSTNAME">Introdu numele tău (opțional)</label>
-                                  <div class="entry__field">
-                                    <input class="input " maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="Ion" />
-                                  </div>
-                                </div>
-                                <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                                </label>
-                                <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4; text-align:left">
-                                  Folosim numele tău doar pentru e-mailuri personalizate.
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div style="padding: 8px 0;">
-                            <div class="sib-form__declaration" style="direction:ltr">
-                              <div class="declaration-block-icon">
-                                <svg class="icon__SVG" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                  <defs>
-                                    <symbol id="svgIcon-sphere" viewBox="0 0 63 63">
-                                      <path class="path1" d="M31.54 0l1.05 3.06 3.385-.01-2.735 1.897 1.05 3.042-2.748-1.886-2.738 1.886 1.044-3.05-2.745-1.897h3.393zm13.97 3.019L46.555 6.4l3.384.01-2.743 2.101 1.048 3.387-2.752-2.1-2.752 2.1 1.054-3.382-2.745-2.105h3.385zm9.998 10.056l1.039 3.382h3.38l-2.751 2.1 1.05 3.382-2.744-2.091-2.743 2.091 1.054-3.381-2.754-2.1h3.385zM58.58 27.1l1.04 3.372h3.379l-2.752 2.096 1.05 3.387-2.744-2.091-2.75 2.092 1.054-3.387-2.747-2.097h3.376zm-3.076 14.02l1.044 3.364h3.385l-2.743 2.09 1.05 3.392-2.744-2.097-2.743 2.097 1.052-3.377-2.752-2.117 3.385-.01zm-9.985 9.91l1.045 3.364h3.393l-2.752 2.09 1.05 3.393-2.745-2.097-2.743 2.097 1.05-3.383-2.751-2.1 3.384-.01zM31.45 55.01l1.044 3.043 3.393-.008-2.752 1.9L34.19 63l-2.744-1.895-2.748 1.891 1.054-3.05-2.743-1.9h3.384zm-13.934-3.98l1.036 3.364h3.402l-2.752 2.09 1.053 3.393-2.747-2.097-2.752 2.097 1.053-3.382-2.743-2.1 3.384-.01zm-9.981-9.91l1.045 3.364h3.398l-2.748 2.09 1.05 3.392-2.753-2.1-2.752 2.096 1.053-3.382-2.743-2.102 3.384-.009zM4.466 27.1l1.038 3.372H8.88l-2.752 2.097 1.053 3.387-2.743-2.09-2.748 2.09 1.053-3.387L0 30.472h3.385zm3.069-14.025l1.045 3.382h3.395L9.23 18.56l1.05 3.381-2.752-2.09-2.752 2.09 1.053-3.381-2.744-2.1h3.384zm9.99-10.056L18.57 6.4l3.393.01-2.743 2.1 1.05 3.373-2.754-2.092-2.751 2.092 1.053-3.382-2.744-2.1h3.384zm24.938 19.394l-10-4.22a2.48 2.48 0 00-1.921 0l-10 4.22A2.529 2.529 0 0019 24.75c0 10.47 5.964 17.705 11.537 20.057a2.48 2.48 0 001.921 0C36.921 42.924 44 36.421 44 24.75a2.532 2.532 0 00-1.537-2.336zm-2.46 6.023l-9.583 9.705a.83.83 0 01-1.177 0l-5.416-5.485a.855.855 0 010-1.192l1.177-1.192a.83.83 0 011.177 0l3.65 3.697 7.819-7.916a.83.83 0 011.177 0l1.177 1.191a.843.843 0 010 1.192z" fill="#0092FF"></path>
-                                    </symbol>
-                                  </defs>
-                                </svg>
-                                <svg class="svgIcon-sphere" style="width:58.5px; height:58.5px;">
-                                  <use xlink:href="#svgIcon-sphere"></use>
-                                </svg>
-                              </div>
-                              <div style="font-size:13px; text-align:left; font-family:Futura, sans-serif; color:#687484; background-color:transparent;">
-                                <p>Folosim Brevo ca platformă de marketing. Prin trimiterea acestui formular, ești de acord ca datele personale furnizate să fie transferate către Brevo pentru prelucrare, în conformitate cu <a href="https://www.brevo.com/en/legal/privacypolicy/" target="_blank">Politica de confidențialitate Brevo</a>.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div style="padding: 8px 0;">
-                            <div class="sib-form-block" style="text-align: left">
-                              <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Futura, sans-serif; color:#FFFFFF; background-color:#3d06cf; border-radius:20px; border-width:0px;" form="sib-form" type="submit">
-                                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-                                  <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                                </svg>
-                                Abonează-te
-                              </button>
-                            </div>
-                          </div>
-                          <input type="text" name="email_address_check" value="" class="input--hidden">
-                          <input type="hidden" name="locale" value="ro">
-                        </form>
-                      </div>
-                    </div>
                   </div>
-                  </div>
+                </div>
+                <input type="text" name="email_address_check" value="" class="input--hidden">
+                <input type="hidden" name="locale" value="ro">
+              </form>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer class="bg-slate-900 text-gray-300 py-10 text-center mt-auto border-t border-gray-800">
-        <div class="flex justify-center space-x-6 mb-4">
-             <a href="https://www.facebook.com/profile.php?id=100082884984904" target="_blank" class="text-gray-400 hover:text-blue-500 transition-transform duration-200 transform hover:scale-110">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.641c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z"/></svg>
-            </a>
-            <a href="https://www.youtube.com/@bookcast1" target="_blank" class="text-gray-400 hover:text-red-600 transition-transform duration-200 transform hover:scale-110">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            </a>
-        </div>
+  <footer class="bg-slate-900 text-gray-300 py-10 text-center mt-auto border-t border-gray-800">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="https://www.facebook.com/profile.php?id=100082884984904" target="_blank"
+        class="text-gray-400 hover:text-blue-500 transition-transform duration-200 transform hover:scale-110">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.641c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z" />
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@bookcast1" target="_blank"
+        class="text-gray-400 hover:text-red-600 transition-transform duration-200 transform hover:scale-110">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      </a>
+    </div>
 
-        <div class="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-            <p class="opacity-60 text-sm">© 2026 Bookcast.</p>
+    <div
+      class="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+      <p class="opacity-60 text-sm">© 2026 Bookcast.</p>
 
-            <a href="https://www.instagram.com/advshoots/" target="_blank" class="text-xs opacity-30 hover:opacity-100 transition-opacity duration-300 mt-2 md:mt-0 font-light font-mono group">
-                Designed & Developed by <span class="font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">advshoots</span>
-            </a>
-        </div>
-    </footer>
+      <a href="https://www.instagram.com/advshoots/" target="_blank"
+        class="text-xs opacity-30 hover:opacity-100 transition-opacity duration-300 mt-2 md:mt-0 font-light font-mono group">
+        Designed & Developed by <span
+          class="font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">advshoots</span>
+      </a>
+    </div>
+  </footer>
 
-    <script src="app.js"></script>
-    <script src="podcast.js"></script>
+  <script src="app.js"></script>
+  <script src="podcast.js"></script>
 
-    <script>
-      window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-      window.LOCALE = 'ro';
-      window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Ceva nu a mers bine. Verifică informațiile și încearcă din nou.";
-      window.REQUIRED_ERROR_MESSAGE = "Acest câmp este obligatoriu. ";
-      window.GENERIC_INVALID_MESSAGE = "Ceva nu a mers bine. Verifică informațiile și încearcă din nou.";
-      window.translation = {
-        common: {
-          selectedList: '{quantity} listă selectată',
-          selectedLists: '{quantity} liste selectate',
-          selectedOption: '{quantity} opțiune selectată',
-          selectedOptions: '{quantity} opțiuni selectate',
-        }
-      };
-      var AUTOHIDE = Boolean(1);
-    </script>
-    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+    window.LOCALE = 'ro';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Ceva nu a mers bine. Verifică informațiile și încearcă din nou.";
+    window.REQUIRED_ERROR_MESSAGE = "Acest câmp este obligatoriu. ";
+    window.GENERIC_INVALID_MESSAGE = "Ceva nu a mers bine. Verifică informațiile și încearcă din nou.";
+    window.translation = {
+      common: {
+        selectedList: '{quantity} listă selectată',
+        selectedLists: '{quantity} liste selectate',
+        selectedOption: '{quantity} opțiune selectată',
+        selectedOptions: '{quantity} opțiuni selectate',
+      }
+    };
+    var AUTOHIDE = Boolean(1);
+  </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
-    <!-- Floating Despre Noi button -->
-    <a href="#despre-noi" id="despre-noi-btn" class="fixed bottom-6 right-6 z-50 bg-white/30 backdrop-blur-md border border-white/40 shadow-lg text-slate-600 hover:text-indigo-600 hover:bg-white/80 px-4 py-2 rounded-full text-sm font-bold transition-all duration-500 flex items-center gap-1 hover:-translate-y-1 hover:shadow-xl opacity-70 hover:opacity-100">
-        despre noi <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
-    </a>
+  <!-- Floating Despre Noi button -->
+  <a href="#despre-noi" id="despre-noi-btn"
+    class="fixed bottom-6 right-6 z-50 bg-white/30 backdrop-blur-md border border-white/40 shadow-lg text-slate-600 hover:text-indigo-600 hover:bg-white/80 px-4 py-2 rounded-full text-sm font-bold transition-all duration-500 flex items-center gap-1 hover:-translate-y-1 hover:shadow-xl opacity-70 hover:opacity-100">
+    despre noi <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </a>
 
-    <script>
-        // Ascunde butonul "Despre Noi" cand ajungem la sectiune
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.getElementById('despre-noi-btn');
-            const target = document.getElementById('despre-noi');
-            
-            if (btn && target) {
-                window.addEventListener('scroll', () => {
-                    const targetPosition = target.getBoundingClientRect().top;
-                    // Daca am ajuns la sectiune sau suntem sub ea (targetPosition <= window.innerHeight / 2)
-                    if (targetPosition < window.innerHeight - 100) {
-                        btn.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
-                    } else {
-                        btn.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
-                    }
-                });
-            }
+  <script>
+    // Ascunde butonul "Despre Noi" cand ajungem la sectiune
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('despre-noi-btn');
+      const target = document.getElementById('despre-noi');
+
+      if (btn && target) {
+        window.addEventListener('scroll', () => {
+          const targetPosition = target.getBoundingClientRect().top;
+          // Daca am ajuns la sectiune sau suntem sub ea (targetPosition <= window.innerHeight / 2)
+          if (targetPosition < window.innerHeight - 100) {
+            btn.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+          } else {
+            btn.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+          }
         });
-    </script>
+      }
+    });
+  </script>
 
-    <!-- Back to Top Button -->
-    <a href="#" id="back-to-top" class="fixed bottom-6 left-6 z-50 bg-white/30 backdrop-blur-md border border-white/40 shadow-lg text-slate-600 hover:text-indigo-600 hover:bg-white/80 px-4 py-2 rounded-full text-sm font-bold transition-all duration-500 flex items-center gap-1 hover:-translate-y-1 hover:shadow-xl opacity-0 pointer-events-none translate-y-10">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg> sus
-    </a>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const backToTop = document.getElementById('back-to-top');
-            if (backToTop) {
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 300) {
-                        backToTop.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
-                    } else {
-                        backToTop.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
-                    }
-                });
-                backToTop.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-            }
+  <!-- Back to Top Button -->
+  <a href="#" id="back-to-top"
+    class="fixed bottom-6 left-6 z-50 bg-white/30 backdrop-blur-md border border-white/40 shadow-lg text-slate-600 hover:text-indigo-600 hover:bg-white/80 px-4 py-2 rounded-full text-sm font-bold transition-all duration-500 flex items-center gap-1 hover:-translate-y-1 hover:shadow-xl opacity-0 pointer-events-none translate-y-10">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg> sus
+  </a>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const backToTop = document.getElementById('back-to-top');
+      if (backToTop) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTop.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
+          } else {
+            backToTop.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
+          }
         });
-    </script>
+        backToTop.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
 </body>
+
 </html>

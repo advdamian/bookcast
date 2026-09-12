@@ -33,12 +33,16 @@ body {
 .liquid-bg-static {
     background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 50%, #fce7f3 100%);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Specific background for the homepage - Mesh gradient or vibrant gradient */
 body.home-page {
     background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Glassmorphism utility class for cards */
