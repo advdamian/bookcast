@@ -1,5 +1,11 @@
 const episoade = [
     {
+        titlu: "Dialoguri Inspiraționale: RODICA CONSTANDA - Despre exil, de la Muzeul Cărții și Exilului Românesc.",
+        youtubeId: "qkmgwKvFqT8",
+        data: "13 Sep 2026",
+        descriere: "Un nou podcast, o nouă temă de discuție. Alexia și Bianca au discutat cu Rodica Nicoleta Constanda, profesoară și asistent de cercetare la Muzeul Cărții și Exilului Românesc din Craiova"
+    },
+    {
         titlu: "Dialoguri Inspiraționale: MIRCEA MOGOȘEANU - Despre Teatru, de pe băncile școlii, până pe scena.",
         youtubeId: "QxnBYsFLTek",
         data: "30 Mar 2026",
