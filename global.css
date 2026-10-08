@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    font-family: 'Jost', sans-serif;
-    animation: fadeIn 0.5s ease-out;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #334155;
 }
 
 @keyframes fadeIn {
@@ -14,78 +17,69 @@ body {
         opacity: 0;
         transform: translateY(10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar - Clean & Minimal */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f5f9;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #cbd5e1;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 2px solid #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;
 }
 
-/* Background gradient for inner pages - Vibrant and rich */
-.liquid-bg-static {
-    background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 50%, #fce7f3 100%);
+/* Elegant and understated background instead of overly vibrant AI gradients */
+.liquid-bg-static, body.home-page {
+    background-color: #f8fafc;
+    background-image: radial-gradient(at 0% 0%, #ffffff 0px, transparent 50%),
+                      radial-gradient(at 100% 0%, #f1f5f9 0px, transparent 50%),
+                      radial-gradient(at 100% 100%, #ffffff 0px, transparent 50%);
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-/* Specific background for the homepage - Mesh gradient or vibrant gradient */
-body.home-page {
-    background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Glassmorphism utility class for cards */
+/* Premium Card Design (replaces the AI 'glass' look) */
 .glass-card {
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.03), 0 0 3px rgba(15, 23, 42, 0.02);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
-    background: rgba(255, 255, 255, 0.8);
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px -4px rgba(15, 23, 42, 0.06), 0 4px 6px -2px rgba(15, 23, 42, 0.03);
+    border-color: rgba(203, 213, 225, 0.8);
 }
 
 /* Beautiful separators for sections */
 .separator-fade {
-    height: 4px;
+    height: 1px;
     width: 100%;
-    max-width: 500px;
-    border-radius: 9999px;
-    margin-bottom: 2rem;
-    background-image: linear-gradient(to right, var(--tw-gradient-from, #6366f1), transparent);
+    max-width: 300px;
+    margin: 3rem auto;
+    background: linear-gradient(to right, transparent, #e2e8f0, transparent);
 }
 
 /* Smooth reveal animation for scrolling */
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reveal.active {

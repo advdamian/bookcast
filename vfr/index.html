@@ -38,10 +38,10 @@
                     <a href="../livada/"
                         class="text-slate-600 hover:text-green-600 font-medium transition-colors duration-200">Livada
                         Noastră</a>
+                    <a href="./"
+                        class="text-emerald-600 font-bold bg-emerald-50 px-3 py-1 rounded-lg border border-emerald-200">VFR</a>
                     <a href="../contact/"
                         class="text-slate-600 hover:text-indigo-600 font-medium transition-colors duration-200">Contact</a>
-                    <a href="./"
-                        class="text-emerald-600 font-bold bg-emerald-50 px-3 py-1 rounded-lg border border-green-200">VFR</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
@@ -58,42 +58,107 @@
             <a href="../buzz/" class="block py-2 hover:text-amber-600">Ziarul Buzz</a>
             <a href="../podcast/" class="block py-2 hover:text-indigo-600">Podcast</a>
             <a href="../livada/" class="block py-2 hover:text-green-600">Livada Noastră</a>
-            <a href="../contact/" class="block py-2 hover:text-indigo-600">Contact</a>
             <a href="./" class="block py-2 text-emerald-600 font-bold">Vâlcea Forest Run</a>
+            <a href="../contact/" class="block py-2 hover:text-indigo-600">Contact</a>
         </div>
     </nav>
 
     <header class="relative py-12 md:py-20 px-4">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl -mr-20 -mt-20 -z-10"></div>
-        <div class="absolute bottom-0 left-0 w-72 h-72 bg-green-500/10 rounded-full blur-3xl -ml-20 -mb-20 -z-10"></div>
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl -mr-20 -mt-20 -z-10 animate-pulse">
+        </div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl -ml-20 -mb-20 -z-10">
+        </div>
 
         <div
-            class="max-w-5xl mx-auto glass-card rounded-[2.5rem] p-8 md:p-14 text-center relative overflow-hidden transition-all duration-300 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.15)] group border border-emerald-100/50">
-            <div class="relative z-10">
-                <span
-                    class="inline-block py-1 px-4 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-800 text-sm font-bold mb-6 shadow-sm">
-                    🌲 Eveniment Sportiv și Caritabil
-                </span>
+            class="max-w-6xl mx-auto glass-card rounded-[3rem] p-8 md:p-16 relative overflow-hidden border border-amber-200/50 shadow-[0_20px_60px_-15px_rgba(251,191,36,0.3)] bg-gradient-to-br from-white/90 to-amber-50/80 group">
 
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-slate-900 drop-shadow-sm tracking-tight">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-600">Vâlcea
-                        Forest Run</span>
-                </h1>
+            <div class="relative z-10 flex flex-col lg:flex-row items-center gap-12">
+                <!-- Left Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center justify-center lg:justify-start gap-2 py-2 px-5 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-800 text-sm font-bold mb-6 shadow-sm">
+                        <span>🌲 Vâlcea Forest Run</span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 hidden sm:block"></span>
+                        <span class="text-amber-600 animate-bounce">🎉 Obiectiv Depășit!</span>
+                    </div>
 
-                <p class="text-xl md:text-2xl text-slate-700 mb-10 max-w-3xl mx-auto font-medium leading-relaxed">
-                    Alătură-te nouă într-o cursă caritabilă de neuitat prin natură. Fiecare pas pe care îl faci ajută la
-                    sprijinirea cauzelor locale și aduce zâmbete în comunitatea noastră.
-                </p>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 text-slate-800 leading-tight tracking-tight">
+                        Am strâns peste <br>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600 text-7xl md:text-8xl drop-shadow-sm inline-block transform transition-transform hover:scale-105 duration-300"
+                            id="donation-counter">0</span>
+                        <span class="text-amber-600 text-4xl md:text-5xl">lei</span>
+                    </h1>
 
-                <div class="flex flex-col sm:flex-row justify-center gap-5">
-                    <a href="https://fcvl.ro/vfr" target="_blank" rel="noopener noreferrer"
-                        class="bg-white text-emerald-600 px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:bg-emerald-50 hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-emerald-100">
-                        📖 Află mai multe
-                    </a>
-                    <a href="https://fcvl.ro/proiecte/bookcast-buzz" target="_blank" rel="noopener noreferrer"
-                        class="bg-gradient-to-r from-emerald-500 to-green-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-emerald-400/50">
-                        💖 Donează Acum
-                    </a>
+                    <p
+                        class="text-xl md:text-2xl text-slate-700 font-medium mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Din donațiile online și din standul nostru de la maraton! Vă mulțumim din suflet. Alătură-te
+                        nouă într-o cursă caritabilă de neuitat prin natură.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-5 mb-10">
+                        <a href="https://fcvl.ro/vfr" target="_blank" rel="noopener noreferrer"
+                            class="bg-white text-emerald-600 px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:bg-emerald-50 hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-emerald-100">
+                            📖 Află mai multe
+                        </a>
+                        <a href="https://fcvl.ro/proiecte/bookcast-buzz" target="_blank" rel="noopener noreferrer"
+                            class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 active:scale-95 border border-amber-400/50">
+                            💖 Susține Proiectul
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-white/60 backdrop-blur rounded-2xl p-6 border border-white/80 shadow-sm relative overflow-hidden group/thanks text-left max-w-2xl mx-auto lg:mx-0">
+                        <div
+                            class="absolute top-0 left-0 w-1 h-full bg-amber-400 transition-all duration-300 group-hover/thanks:w-full group-hover/thanks:opacity-10">
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3 relative z-10 flex items-center gap-2">
+                            <svg class="w-6 h-6 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                            Mulțumiri speciale:
+                        </h3>
+                        <p class="text-slate-600 italic relative z-10">
+                            "Vă mulțumim enorm pentru ajutorul oferit de <span
+                                class="font-bold text-amber-700">Asociația Chronartis</span>, Cristi Danileț, Florin
+                            Stoican, Rodica
+                            Nicoleta Constanda și
+                            tuturor celor care au fost alături de noi la stand și pe traseu."
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Right Content (Image) -->
+                <div class="w-full lg:w-5/12 flex justify-center relative mt-8 lg:mt-0">
+                    <div
+                        class="absolute -top-6 -left-6 w-16 h-16 bg-amber-400 rounded-full blur-xl opacity-60 animate-pulse">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-20 h-20 bg-emerald-500 rounded-full blur-xl opacity-30 animate-pulse"
+                        style="animation-delay: 0.5s;"></div>
+
+                    <div
+                        class="relative group/img cursor-pointer w-full max-w-md aspect-[3/4] lg:aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white transform transition-all duration-500 hover:scale-105 hover:-rotate-2 hover:shadow-[0_20px_50px_rgba(245,158,11,0.3)] bg-slate-100">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-200 flex flex-col items-center justify-center text-slate-400 border-2 border-slate-300 border-dashed rounded-[1.8rem] m-2 transition-all duration-300 group-hover/img:border-amber-400 group-hover/img:bg-amber-50">
+                            <svg class="w-20 h-20 mb-4 text-amber-400 transform transition-transform group-hover/img:scale-110 duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span
+                                class="font-medium text-slate-500 group-hover/img:text-amber-700 transition-colors text-lg">Adaugă
+                                poza de la maraton</span>
+                            <span class="text-sm text-slate-400 mt-2">(pune calea în src="")</span>
+                        </div>
+                        <img src="../imagini/vfr.JPG" alt="Poza VFR"
+                            class="w-full h-full object-cover relative z-10 opacity-0 transition-opacity duration-300"
+                            onload="if(this.getAttribute('src') && this.getAttribute('src') !== '') { this.classList.remove('opacity-0'); this.previousElementSibling.classList.add('hidden'); }">
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,22 +243,50 @@
 
             <a href="https://www.instagram.com/advshoots/" target="_blank"
                 class="text-xs opacity-30 hover:opacity-100 transition-opacity duration-300 mt-2 md:mt-0 font-light font-mono group">
-                Designed & Developed by <span class="font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">advshoots</span>
+                Designed & Developed by <span
+                    class="font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">advshoots</span>
             </a>
         </div>
     </footer>
 
     <script src="../app.js"></script>
     <script>
-        // Mobile menu functionality
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
 
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
+        // Animație counter donații
+        document.addEventListener("DOMContentLoaded", () => {
+            const counterElement = document.getElementById("donation-counter");
+            if (!counterElement) return;
+
+            const targetNumber = 17500;
+            const duration = 2500; // 2.5 secunde
+            const frameRate = 30;
+            const totalFrames = Math.round((duration / 1000) * frameRate);
+            let currentFrame = 0;
+
+            // Easing function pentru încetinire fină la final
+            const easeOutQuart = t => 1 - (--t) * t * t * t;
+
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    const counterInterval = setInterval(() => {
+                        currentFrame++;
+                        const progress = easeOutQuart(currentFrame / totalFrames);
+                        const currentNumber = Math.round(targetNumber * progress);
+
+                        counterElement.innerText = currentNumber.toLocaleString('ro-RO');
+
+                        if (currentFrame >= totalFrames) {
+                            clearInterval(counterInterval);
+                            counterElement.innerText = targetNumber.toLocaleString('ro-RO') + "+";
+                            counterElement.classList.add('drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]');
+                        }
+                    }, 1000 / frameRate);
+                    observer.disconnect();
+                }
+            }, { threshold: 0.5 });
+
+            observer.observe(counterElement);
+        });
     </script>
 </body>
 
